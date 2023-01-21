@@ -14,32 +14,20 @@ namespace Visual.UserControls
     public partial class Calendario : UserControl
     {
         private int month, year;
-        FrmPrincipal parentForm;
+        Form parentForm;
 
         public Calendario()
         {
             InitializeComponent();
-            this.Resize += new System.EventHandler(this.MiControl_Resize);
-            //parentForm = (FrmPrincipal)this.Parent;
-            //parentForm.ResizeEnd += new EventHandler(parentForm_ResizeEnd);
+            
         }
 
         private void Calendario_ResizeEnd(object sender, EventArgs e)
         {
-
-        }
-
-        private void parentForm_ResizeEnd(object sender, EventArgs e)
-        {
             ResizeElementos();
         }
 
-        private async void MiControl_Resize(object sender, EventArgs e)
-        {
-            
-                ResizeElementos();
-            
-        }
+
 
 
         public void GenerarDias()
@@ -130,6 +118,8 @@ namespace Visual.UserControls
 
         private void Calendario_Load(object sender, EventArgs e)
         {
+            parentForm = (Form)this.FindForm();
+            parentForm.ResizeEnd += new EventHandler(Calendario_ResizeEnd);
             GenerarDias();
             ResizeElementos();
         }
