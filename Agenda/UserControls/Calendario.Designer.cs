@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panelMes = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDias = new System.Windows.Forms.FlowLayoutPanel();
             this.lblDo = new System.Windows.Forms.Label();
@@ -38,32 +37,23 @@
             this.lblJu = new System.Windows.Forms.Label();
             this.lblVi = new System.Windows.Forms.Label();
             this.lblSa = new System.Windows.Forms.Label();
-            this.panelPrincipal.SuspendLayout();
+            this.panelMes.SuspendLayout();
             this.panelDias.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelPrincipal
-            // 
-            this.panelPrincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPrincipal.Controls.Add(this.panelMes);
-            this.panelPrincipal.Controls.Add(this.panelDias);
-            this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(490, 460);
-            this.panelPrincipal.TabIndex = 0;
-            // 
             // panelMes
             // 
-            this.panelMes.Location = new System.Drawing.Point(1, 70);
+            this.panelMes.Controls.Add(this.panelDias);
+            this.panelMes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMes.Location = new System.Drawing.Point(0, 0);
             this.panelMes.Margin = new System.Windows.Forms.Padding(0);
+            this.panelMes.MinimumSize = new System.Drawing.Size(150, 100);
             this.panelMes.Name = "panelMes";
-            this.panelMes.Size = new System.Drawing.Size(490, 303);
-            this.panelMes.TabIndex = 4;
+            this.panelMes.Size = new System.Drawing.Size(300, 200);
+            this.panelMes.TabIndex = 5;
             // 
             // panelDias
             // 
-            this.panelDias.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelDias.Controls.Add(this.lblDo);
             this.panelDias.Controls.Add(this.lblLu);
             this.panelDias.Controls.Add(this.lblMa);
@@ -71,84 +61,86 @@
             this.panelDias.Controls.Add(this.lblJu);
             this.panelDias.Controls.Add(this.lblVi);
             this.panelDias.Controls.Add(this.lblSa);
-            this.panelDias.Location = new System.Drawing.Point(0, 29);
+            this.panelDias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDias.Location = new System.Drawing.Point(0, 0);
+            this.panelDias.Margin = new System.Windows.Forms.Padding(0);
             this.panelDias.Name = "panelDias";
-            this.panelDias.Size = new System.Drawing.Size(490, 37);
+            this.panelDias.Size = new System.Drawing.Size(300, 36);
             this.panelDias.TabIndex = 3;
             // 
             // lblDo
             // 
-            this.lblDo.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDo.Location = new System.Drawing.Point(0, 0);
             this.lblDo.Margin = new System.Windows.Forms.Padding(0);
             this.lblDo.Name = "lblDo";
-            this.lblDo.Size = new System.Drawing.Size(70, 37);
+            this.lblDo.Size = new System.Drawing.Size(42, 37);
             this.lblDo.TabIndex = 6;
             this.lblDo.Text = "DO";
             this.lblDo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLu
             // 
-            this.lblLu.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLu.Location = new System.Drawing.Point(70, 0);
+            this.lblLu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLu.Location = new System.Drawing.Point(42, 0);
             this.lblLu.Margin = new System.Windows.Forms.Padding(0);
             this.lblLu.Name = "lblLu";
-            this.lblLu.Size = new System.Drawing.Size(70, 37);
+            this.lblLu.Size = new System.Drawing.Size(42, 37);
             this.lblLu.TabIndex = 1;
             this.lblLu.Text = "LU";
             this.lblLu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMa
             // 
-            this.lblMa.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMa.Location = new System.Drawing.Point(140, 0);
+            this.lblMa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMa.Location = new System.Drawing.Point(84, 0);
             this.lblMa.Margin = new System.Windows.Forms.Padding(0);
             this.lblMa.Name = "lblMa";
-            this.lblMa.Size = new System.Drawing.Size(70, 37);
+            this.lblMa.Size = new System.Drawing.Size(42, 37);
             this.lblMa.TabIndex = 2;
             this.lblMa.Text = "MA";
             this.lblMa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMi
             // 
-            this.lblMi.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMi.Location = new System.Drawing.Point(210, 0);
+            this.lblMi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMi.Location = new System.Drawing.Point(126, 0);
             this.lblMi.Margin = new System.Windows.Forms.Padding(0);
             this.lblMi.Name = "lblMi";
-            this.lblMi.Size = new System.Drawing.Size(70, 37);
+            this.lblMi.Size = new System.Drawing.Size(42, 37);
             this.lblMi.TabIndex = 3;
             this.lblMi.Text = "MI";
             this.lblMi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblJu
             // 
-            this.lblJu.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblJu.Location = new System.Drawing.Point(280, 0);
+            this.lblJu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblJu.Location = new System.Drawing.Point(168, 0);
             this.lblJu.Margin = new System.Windows.Forms.Padding(0);
             this.lblJu.Name = "lblJu";
-            this.lblJu.Size = new System.Drawing.Size(70, 37);
+            this.lblJu.Size = new System.Drawing.Size(42, 37);
             this.lblJu.TabIndex = 4;
             this.lblJu.Text = "JU";
             this.lblJu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblVi
             // 
-            this.lblVi.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVi.Location = new System.Drawing.Point(350, 0);
+            this.lblVi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblVi.Location = new System.Drawing.Point(210, 0);
             this.lblVi.Margin = new System.Windows.Forms.Padding(0);
             this.lblVi.Name = "lblVi";
-            this.lblVi.Size = new System.Drawing.Size(70, 37);
+            this.lblVi.Size = new System.Drawing.Size(42, 37);
             this.lblVi.TabIndex = 5;
             this.lblVi.Text = "VI";
             this.lblVi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSa
             // 
-            this.lblSa.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSa.Location = new System.Drawing.Point(420, 0);
+            this.lblSa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSa.Location = new System.Drawing.Point(252, 0);
             this.lblSa.Margin = new System.Windows.Forms.Padding(0);
             this.lblSa.Name = "lblSa";
-            this.lblSa.Size = new System.Drawing.Size(70, 37);
+            this.lblSa.Size = new System.Drawing.Size(42, 37);
             this.lblSa.TabIndex = 7;
             this.lblSa.Text = "SA";
             this.lblSa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,11 +149,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelPrincipal);
+            this.Controls.Add(this.panelMes);
+            this.MinimumSize = new System.Drawing.Size(150, 100);
             this.Name = "Calendario";
-            this.Size = new System.Drawing.Size(490, 463);
+            this.Size = new System.Drawing.Size(300, 200);
             this.Load += new System.EventHandler(this.Calendario_Load);
-            this.panelPrincipal.ResumeLayout(false);
+            this.panelMes.ResumeLayout(false);
             this.panelDias.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -169,7 +162,6 @@
 
         #endregion
 
-        private Panel panelPrincipal;
         private FlowLayoutPanel panelMes;
         private FlowLayoutPanel panelDias;
         private Label lblDo;

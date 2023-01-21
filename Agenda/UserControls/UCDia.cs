@@ -16,5 +16,10 @@ namespace Visual.UserControls
         {
             InitializeComponent();
         }
+
+        private void lblDia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

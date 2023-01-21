@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,36 +14,33 @@ namespace Visual.UserControls
     public partial class Calendario : UserControl
     {
         private int month, year;
-
-        private Font tamanioDias;
-        [Description("Establece el tamaño de los días")]
-        [Category("Mod")]
-        [DefaultValue(typeof(Font), "Calibri, 12pt")]
-
-
-        public Font TamanioDias
-        {
-            get { return tamanioDias; }
-            set
-            {
-                TamanioDias = value;
-                lblDo.Font = tamanioDias;
-                lblLu.Font = tamanioDias;
-                lblMa.Font = tamanioDias;
-                lblMi.Font = tamanioDias;
-                lblJu.Font = tamanioDias;
-                lblVi.Font = tamanioDias;
-                lblSa.Font = tamanioDias;
-            }
-        }
+        FrmPrincipal parentForm;
 
         public Calendario()
         {
             InitializeComponent();
+            this.Resize += new System.EventHandler(this.MiControl_Resize);
+            //parentForm = (FrmPrincipal)this.Parent;
+            //parentForm.ResizeEnd += new EventHandler(parentForm_ResizeEnd);
+        }
+
+        private void Calendario_ResizeEnd(object sender, EventArgs e)
+        {
+
+        }
+
+        private void parentForm_ResizeEnd(object sender, EventArgs e)
+        {
+            ResizeElementos();
+        }
+
+        private async void MiControl_Resize(object sender, EventArgs e)
+        {
+            
+                ResizeElementos();
             
         }
 
-        
 
         public void GenerarDias()
         {
@@ -75,24 +73,58 @@ namespace Visual.UserControls
             }
         }
 
+
         public void ResizeElementos()
         {
 
-            panelPrincipal.Width = this.Width;
-            panelPrincipal.Height = this.Height;
+
             
             panelDias.Width = this.Width;
             foreach (Control c in panelDias.Controls)
             {
                 c.Width = panelDias.Width/7;
-
+                c.Height = panelMes.Height/7;
+                if(c is Label)
+                {
+                    float fontSize = Math.Min(c.Width / 5.0f, c.Height / 2.0f);
+                    if (fontSize <= 6)
+                    {
+                        fontSize = 6;
+                    }
+                    else if (fontSize > 20)
+                    {
+                        fontSize = 20;
+                    }
+                    c.Font = new Font(c.Font.Name,
+                    fontSize, c.Font.Style);
+                }
+                
             }
 
             panelMes.Width = this.Width;
             foreach(Control c in panelMes.Controls)
             {
-                c.Width = panelMes.Width / 7;
-                c.Height = panelMes.Height / 6;
+
+                c.Height = panelMes.Height / 7;
+                if (!(c is FlowLayoutPanel))
+                {
+                    c.Width = panelMes.Width / 7;
+                    
+                    UCDia diasMes = (UCDia)c;
+                    float fontSize = Math.Min(panelMes.Width / 20.0f, panelMes.Height / 15.0f);
+                    if (fontSize <= 0)
+                    {
+                        fontSize = 1;
+                    }
+                    else if (fontSize > 20)
+                    {
+                        fontSize = 20;
+                    }
+                    diasMes.lblDia.Font = new Font(diasMes.lblDia.Font.Name,
+                    fontSize, diasMes.lblDia.Font.Style);
+                }
+                
+
             }
         }
 
