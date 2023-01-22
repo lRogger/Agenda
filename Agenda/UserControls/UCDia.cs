@@ -27,9 +27,15 @@ namespace Visual.UserControls
 
         private void UCDia_Load(object sender, EventArgs e)
         {
+
         }
 
         private void UCDia_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, this.ClientRectangle, colorBorder, ButtonBorderStyle.Solid);
 

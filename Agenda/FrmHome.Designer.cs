@@ -242,6 +242,7 @@
             // 
             // panelMod17
             // 
+            this.panelMod17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMod17.BackColor = System.Drawing.Color.Transparent;
             this.panelMod17.BorderRadius = 40;
             this.panelMod17.Controls.Add(this.pictureBox9);
@@ -265,6 +266,7 @@
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -309,6 +311,7 @@
             // 
             // panelMod15
             // 
+            this.panelMod15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMod15.BackColor = System.Drawing.Color.Transparent;
             this.panelMod15.BorderRadius = 40;
             this.panelMod15.Controls.Add(this.pictureBox8);
@@ -332,6 +335,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -376,6 +380,7 @@
             // 
             // panelMod13
             // 
+            this.panelMod13.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMod13.BackColor = System.Drawing.Color.Transparent;
             this.panelMod13.BorderRadius = 40;
             this.panelMod13.Controls.Add(this.pictureBox7);
@@ -399,6 +404,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -443,6 +449,7 @@
             // 
             // panelMod11
             // 
+            this.panelMod11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMod11.BackColor = System.Drawing.Color.Transparent;
             this.panelMod11.BorderRadius = 40;
             this.panelMod11.Controls.Add(this.pictureBox6);
@@ -466,6 +473,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -642,11 +650,11 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.calendario1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(10, 215);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel2.Size = new System.Drawing.Size(780, 388);
+            this.panel2.Size = new System.Drawing.Size(780, 391);
             this.panel2.TabIndex = 4;
             // 
             // calendario1
@@ -659,7 +667,7 @@
             this.calendario1.Location = new System.Drawing.Point(10, 0);
             this.calendario1.MinimumSize = new System.Drawing.Size(150, 87);
             this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(760, 388);
+            this.calendario1.Size = new System.Drawing.Size(760, 391);
             this.calendario1.TabIndex = 0;
             this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
@@ -674,7 +682,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmHome";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -714,6 +722,7 @@
         #endregion
 
         private Panel panel1;
+
         private CustomControls.RJControls.RJTextBox rjTextBox1;
         private Individual.Visual.ComponentesMod.PanelMod panelMod1;
         private Individual.Visual.ComponentesMod.RJButton btnPerfil;
