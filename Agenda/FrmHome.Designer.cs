@@ -723,30 +723,33 @@
 
         private Panel panel1;
 
+        /*  Aún no tienen uso
         private CustomControls.RJControls.RJTextBox rjTextBox1;
         private Individual.Visual.ComponentesMod.PanelMod panelMod1;
         private Individual.Visual.ComponentesMod.RJButton btnPerfil;
         private CustomControls.RJControls.RJDropdownMenu menuPerfil;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod8;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod9;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod6;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod7;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod4;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod5;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod2;
+        private Individual.Visual.ComponentesMod.PanelMod panelMod3;
+        */
+
         private PictureBox pictureBox1;
         private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod8;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod9;
         private PictureBox pictureBox5;
         private Label label8;
         private Label label9;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod6;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod7;
         private PictureBox pictureBox4;
         private Label label6;
         private Label label7;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod4;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod5;
         private PictureBox pictureBox3;
         private Label label4;
         private Label label5;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod2;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod3;
         private PictureBox pictureBox2;
         private Label label3;
         private Label label2;

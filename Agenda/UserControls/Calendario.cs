@@ -120,6 +120,7 @@ namespace Visual.UserControls
         {
             InitializeComponent();
             parentForm = new Form();
+            fuenteDias = new Font(Font.FontFamily,9,FontStyle.Regular);
             
         }
 
