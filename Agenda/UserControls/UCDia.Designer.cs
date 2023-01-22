@@ -33,11 +33,11 @@
             // 
             // lblDia
             // 
-            this.lblDia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDia.Location = new System.Drawing.Point(0, 0);
+            this.lblDia.AutoSize = true;
+            this.lblDia.Location = new System.Drawing.Point(4, 4);
             this.lblDia.Margin = new System.Windows.Forms.Padding(0);
             this.lblDia.Name = "lblDia";
-            this.lblDia.Size = new System.Drawing.Size(70, 50);
+            this.lblDia.Size = new System.Drawing.Size(26, 15);
             this.lblDia.TabIndex = 0;
             this.lblDia.Text = "DIA";
             this.lblDia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -47,11 +47,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblDia);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCDia";
             this.Size = new System.Drawing.Size(70, 50);
+            this.Load += new System.EventHandler(this.UCDia_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.UCDia_Paint);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
