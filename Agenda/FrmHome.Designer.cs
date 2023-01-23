@@ -53,10 +53,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panelMod10 = new Individual.Visual.ComponentesMod.PanelMod();
+            this.label11 = new System.Windows.Forms.Label();
             this.panelMod11 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -433,9 +433,9 @@
             // 
             this.panelMod10.BackColor = System.Drawing.Color.Transparent;
             this.panelMod10.BorderRadius = 10;
+            this.panelMod10.Controls.Add(this.label11);
             this.panelMod10.Controls.Add(this.panelMod11);
             this.panelMod10.Controls.Add(this.label12);
-            this.panelMod10.Controls.Add(this.label11);
             this.panelMod10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod10.ForeColor = System.Drawing.Color.Black;
             this.panelMod10.GradientAngle = 90F;
@@ -447,9 +447,22 @@
             this.panelMod10.Size = new System.Drawing.Size(190, 79);
             this.panelMod10.TabIndex = 0;
             // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(14, 47);
+            this.label11.Margin = new System.Windows.Forms.Padding(0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Para Hoy";
+            // 
             // panelMod11
             // 
-            this.panelMod11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMod11.BackColor = System.Drawing.Color.Transparent;
             this.panelMod11.BorderRadius = 40;
             this.panelMod11.Controls.Add(this.pictureBox6);
@@ -473,30 +486,16 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(9, 46);
+            this.label12.Location = new System.Drawing.Point(10, 19);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Para Hoy";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(5, 18);
-            this.label11.Margin = new System.Windows.Forms.Padding(0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 32);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "00";
+            this.label12.Size = new System.Drawing.Size(42, 32);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "00";
             // 
             // pictureBox5
             // 
@@ -684,7 +683,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmHome";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -775,12 +773,12 @@
         private Individual.Visual.ComponentesMod.PanelMod panelMod12;
         private Individual.Visual.ComponentesMod.PanelMod panelMod13;
         private PictureBox pictureBox7;
-        private Label label13;
-        private Label label14;
         private Individual.Visual.ComponentesMod.PanelMod panelMod10;
         private Individual.Visual.ComponentesMod.PanelMod panelMod11;
         private PictureBox pictureBox6;
-        private Label label12;
+        private Label label13;
+        private Label label14;
         private Label label11;
+        private Label label12;
     }
 }
