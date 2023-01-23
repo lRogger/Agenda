@@ -153,17 +153,11 @@ namespace Visual.UserControls
         //Constructor
         public Calendario()
         {
+            listaDias = new List<UCDia>();
             InitializeComponent();
             fuenteDias = new Font(Font.FontFamily,9,FontStyle.Regular);
             diaSelected = DateTime.Now;
 
-        }
-
-
-
-        private void Calendario_ResizeEnd(object sender, EventArgs e)
-        {
-            ResizeElementos();
         }
 
 
@@ -204,7 +198,7 @@ namespace Visual.UserControls
                 diasMes.ColorBorder = BordeColor;
                 diasMes.lblDia.Text = i.ToString();
                 diasMes.Dock = DockStyle.Fill;
-                diasMes.panel1.Click += new EventHandler(Dia_Click);
+                diasMes.panel1.Click += new EventHandler(Dia_Click!);
                 panelMes.Controls.Add(diasMes);
                 listaDias.Add(diasMes);
             }
@@ -242,61 +236,7 @@ namespace Visual.UserControls
 
                 }
             }
-            MessageBox.Show("Dia: " + diaSelected.Date.ToString("d"));
 
-        }
-
-
-        public void ResizeElementos()
-        {
-
-            panelMes.Width = this.Width;
-            foreach(Control c in panelMes.Controls)
-            {
-
-                c.Height = panelMes.Height / 7;
-                if (!(c is System.Windows.Forms.Label))
-                {
-                    
-                    c.Width = panelMes.Width / 7;
-                    
-                    UCDia diasMes = (UCDia)c;
-
-                    if (diasMes.lblDia.Size.Height > c.Height)
-                    {
-                        while(diasMes.lblDia.Size.Height > c.Height)
-                        {
-                            diasMes.lblDia.Font = new Font("Microsoft Sans Serif", diasMes.lblDia.Font.Size - 0.5f, FontStyle.Bold);
-                        }
-                    }else if ( diasMes.lblDia.Size.Height < c.Height)
-                    {
-
-                        while (diasMes.lblDia.Size.Height < c.Height)
-                        {
-                            diasMes.lblDia.Font = new Font("Microsoft Sans Serif", diasMes.lblDia.Font.Size + 0.5f, FontStyle.Bold);
-                        }
-                    }
-
-                }
-                else
-                {
-                    c.Width = panelMes.Width / 7;
-                    float fontSize = Math.Min(c.Width / 6.5f, c.Height / 2.0f);
-                    if (fontSize <= 7)
-                    {
-                        fontSize = 7;
-                    }
-                    else if (fontSize > 30)
-                    {
-                        fontSize = 30;
-                    }
-                    c.Font = new Font(c.Font.Name,
-                    fontSize, c.Font.Style);
-                    
-                }
-                
-
-            }
         }
 
 
@@ -317,10 +257,7 @@ namespace Visual.UserControls
 
         private void Calendario_Load(object sender, EventArgs e)
         {
-            //parentForm = (Form)this.FindForm();
-            //parentForm.ResizeEnd += new EventHandler(Calendario_ResizeEnd);
             GenerarDias();
-            //ResizeElementos();
 
             foreach (UCDia diasMes in listaDias)
             {

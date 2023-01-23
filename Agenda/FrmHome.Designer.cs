@@ -33,7 +33,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnUser = new Individual.Visual.ComponentesMod.RJButton();
             this.panelMod18 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pbUser = new System.Windows.Forms.PictureBox();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelMod18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelMod16.SuspendLayout();
@@ -115,11 +115,11 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.btnUser);
             this.flowLayoutPanel1.Controls.Add(this.panelMod18);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(580, 2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(254, 2);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 41);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(526, 41);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // btnUser
@@ -135,7 +135,7 @@
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.ForeColor = System.Drawing.Color.Black;
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUser.Location = new System.Drawing.Point(87, 5);
+            this.btnUser.Location = new System.Drawing.Point(413, 5);
             this.btnUser.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnUser.MinimumSize = new System.Drawing.Size(110, 0);
             this.btnUser.Name = "btnUser";
@@ -152,27 +152,27 @@
             this.panelMod18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMod18.BackColor = System.Drawing.Color.Transparent;
             this.panelMod18.BorderRadius = 40;
-            this.panelMod18.Controls.Add(this.pictureBox10);
+            this.panelMod18.Controls.Add(this.pbUser);
             this.panelMod18.ForeColor = System.Drawing.Color.Black;
             this.panelMod18.GradientAngle = 90F;
             this.panelMod18.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod18.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod18.Location = new System.Drawing.Point(49, 3);
+            this.panelMod18.Location = new System.Drawing.Point(375, 3);
             this.panelMod18.Name = "panelMod18";
             this.panelMod18.Size = new System.Drawing.Size(35, 35);
             this.panelMod18.TabIndex = 6;
             // 
-            // pictureBox10
+            // pbUser
             // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 5;
-            this.pictureBox10.TabStop = false;
+            this.pbUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
+            this.pbUser.Location = new System.Drawing.Point(0, 0);
+            this.pbUser.Margin = new System.Windows.Forms.Padding(0);
+            this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(35, 35);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbUser.TabIndex = 5;
+            this.pbUser.TabStop = false;
             // 
             // rjTextBox2
             // 
@@ -464,6 +464,8 @@
             this.panelMod10.Name = "panelMod10";
             this.panelMod10.Size = new System.Drawing.Size(190, 79);
             this.panelMod10.TabIndex = 0;
+            this.panelMod10.Click += new System.EventHandler(this.panelMod10_Click);
+            this.panelMod10.DoubleClick += new System.EventHandler(this.panelMod10_DoubleClick);
             // 
             // label11
             // 
@@ -710,7 +712,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panelMod18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelMod16.ResumeLayout(false);
@@ -777,7 +779,7 @@
         private Panel panel2;
         private UserControls.Calendario calendario1;
         private Individual.Visual.ComponentesMod.PanelMod panelMod18;
-        private PictureBox pictureBox10;
+        private PictureBox pbUser;
         private Individual.Visual.ComponentesMod.RJButton btnUser;
         private CustomControls.RJControls.RJTextBox rjTextBox2;
         private Individual.Visual.ComponentesMod.PanelMod panelMod16;
