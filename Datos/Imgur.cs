@@ -1,14 +1,15 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 using Newtonsoft.Json;
 using System.Runtime.CompilerServices;
+using Newtonsoft.Json.Linq;
 
 namespace Datos
 {
     public class Imgur
     {
-        private dynamic? json;
+        private string json;
 
-        public dynamic Json { get => json!; set => json = value; }
+        public string Json { get => json!; set => json = value; }
 
         public Imgur()
         {
@@ -36,7 +37,10 @@ namespace Datos
                 if (response.IsSuccessStatusCode)
                 {
                     var responseJson = await response.Content.ReadAsStringAsync();
-                    Json = JsonConvert.DeserializeObject(responseJson)!;
+                    dynamic jsonData = JsonConvert.DeserializeObject(responseJson)!;
+
+                    Json = JsonConvert.DeserializeObject(jsonData);
+
                 }
                 else
                 {

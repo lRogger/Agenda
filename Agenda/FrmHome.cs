@@ -26,5 +26,10 @@ namespace Visual
         {
             new Foto().Show();
         }
+
+        private void FrmHome_Click(object sender, EventArgs e)
+        {
+            new Foto().Show();
+        }
     }
 }
