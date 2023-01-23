@@ -21,5 +21,10 @@ namespace Visual
         {
 
         }
+
+        private void panelMod10_DoubleClick(object sender, EventArgs e)
+        {
+            new Foto().Show();
+        }
     }
 }
