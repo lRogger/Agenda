@@ -1,12 +1,14 @@
 ﻿
-using RestSharp;
-
-
+using System.Drawing.Imaging;
+using Datos;
+using Entidades;
 
 namespace Visual
 {
     public partial class Foto : Form
     {
+
+        
         public Foto()
         {
             InitializeComponent();
@@ -17,43 +19,59 @@ namespace Visual
             pbFoto.ImageLocation = tbLink.Text;
         }
 
-        private void btnSubir_Click(object sender, EventArgs e)
+
+        private async void btnSubir_Click(object sender, EventArgs e)
         {
-            // Obtener la imagen del control PictureBox
-            var image = pbFoto.Image;
 
-            // Crear un flujo de memoria para la imagen
-            var stream = new MemoryStream();
-            image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
-            stream.Position = 0;
-
-            // Crear una solicitud para subir la imagen
-            var client = new RestClient("https://api.imgur.com/3/image");
-            var request = new RestRequest(Method.Post.ToString());
-            request.AddHeader("Authorization", "Client-ID f84f7d23f1f95ec");
-            request.AddFile("image", stream.ToArray(), "image.jpg");
-
-            // Ejecutar la solicitud
-            var response = client.Execute(request);
-
-            MessageBox.Show(response.Content.ToString());
-
-            if (response.IsSuccessful)
+            //SUBIR IMAGEN
+            Image img = pbFoto.Image;
+            byte[] imageBytes;
+            using (MemoryStream ms = new MemoryStream())
             {
-                // El código de estado es 200 (OK)
-                dynamic json = Newtonsoft.Json.JsonConvert.DeserializeObject(response.Content);
-                var url = json.data.link;
-                MessageBox.Show("La imagen se ha subido con éxito. URL: " + url);
-            }
-            else
-            {
-                // El código de estado no es 200 (OK)
-                int statusCode = (int)response.StatusCode;
-                string content = response.Content;
-                // aqui puedes tratar el error, o mostrar un mensaje al usuario
-                MessageBox.Show(response.StatusCode.ToString());
+                img.Save(ms, ImageFormat.Jpeg);
+                imageBytes = ms.ToArray();
             }
 
+            Imgur imgur = new Imgur();
+            imgur.SubirImagen(imageBytes);
+
+            Persona p = new Persona();
+            p.Nombre = "Rogger Parraga";
+            p.Cedula = "0930555420";
+            p.Correo = "roggerp98@gmail.com";
+            p.Edad = 24;
+            p.Password = "Hola";
+            p.Admin = true;
+            p.Imagen = imgur.Json;
+
+            DataBase db = new DataBase();
+            db.Insertar(p);
+        }
+
+
+        //Borrar imagen, subir imagen
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            // Obtén la clave de cliente de tu aplicación Agenda en Imgur
+            string clientId = "f84f7d23f1f95ec";
+            string deleteHash = tbHash.Text;
+
+            // Elimina una imagen específica de tu cuenta de Imgur
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("Authorization", "Client-ID " + clientId);
+
+                var response = await client.DeleteAsync("https://api.imgur.com/3/image/" + deleteHash);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine("Image deleted successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Error deleting image: " + response.ReasonPhrase);
+                }
+            }
         }
     }
 }
