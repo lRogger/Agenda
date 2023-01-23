@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Security.Cryptography;
 
 
 namespace Visual.UserControls
@@ -37,8 +38,15 @@ namespace Visual.UserControls
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            ControlPaint.DrawBorder(e.Graphics, this.ClientRectangle, colorBorder, ButtonBorderStyle.Solid);
+            base.OnPaint(e);
 
+            BackColor = colorBorder;
+
+        }
+
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

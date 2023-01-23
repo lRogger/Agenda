@@ -16,6 +16,7 @@ namespace Visual.UserControls
     {
         private int month, year;
         Form parentForm;
+        List<UCDia> listaDias;
 
 
         //Propiedades
@@ -29,6 +30,36 @@ namespace Visual.UserControls
             set
             {
                 bordeColor = value;
+                Invalidate();
+            }
+        }
+
+        //--
+        private Color colorDiaSeleccionado;
+        [Description("Cambiar el color del día seleccionado")]
+        [Category("Colores")]
+        [DefaultValue(typeof(Color), "Black")]
+        public Color ColorDiaSeleccionado
+        {
+            get { return colorDiaSeleccionado; }
+            set
+            {
+                colorDiaSeleccionado = value;
+                Invalidate();
+            }
+        }
+
+        //--
+        private Color colorDia;
+        [Description("Cambiar el color del borde del día")]
+        [Category("Colores")]
+        [DefaultValue(typeof(Color), "Black")]
+        public Color ColorDia
+        {
+            get { return colorDia; }
+            set
+            {
+                colorDia = value;
                 Invalidate();
             }
         }
@@ -155,19 +186,41 @@ namespace Visual.UserControls
                 diasBlancos.ColorBorder= BordeColor;
                 diasBlancos.lblDia.Text = "";
                 diasBlancos.Dock = DockStyle.Fill;
+                
                 panelMes.Controls.Add(diasBlancos);
             }
 
             //Controles dias
+            listaDias = new List<UCDia>();
             for (int i = 1; i<=cantidadDias; i++)
             {
                 UCDia diasMes = new UCDia();
                 diasMes.ColorBorder = BordeColor;
                 diasMes.lblDia.Text = i.ToString();
                 diasMes.Dock = DockStyle.Fill;
+                diasMes.panel1.Click += new EventHandler(Dia_Click);
                 panelMes.Controls.Add(diasMes);
-                //Color.FromArgb(232, 232, 249)
+                listaDias.Add(diasMes);
             }
+        }
+
+        private void Dia_Click(object sender, EventArgs e)
+        {
+            Panel dia = (Panel)sender;
+            UCDia ucdia = (UCDia)dia.Parent;
+
+            foreach(UCDia diasMes in listaDias)
+            {
+                if(diasMes.lblDia.Text != ucdia.lblDia.Text)
+                {
+                    diasMes.panel1.BackColor = ColorDia;
+                }
+                else
+                {
+                    ucdia.panel1.BackColor = ColorDiaSeleccionado;
+                }
+            }
+            
         }
 
 

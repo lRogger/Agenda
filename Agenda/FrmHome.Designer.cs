@@ -158,9 +158,9 @@
             // 
             // rjTextBox2
             // 
-            this.rjTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
-            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
+            this.rjTextBox2.BackColor = System.Drawing.Color.Silver;
+            this.rjTextBox2.BorderColor = System.Drawing.Color.Silver;
+            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.Silver;
             this.rjTextBox2.BorderRadius = 10;
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -654,20 +654,22 @@
             this.panel2.Location = new System.Drawing.Point(10, 215);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel2.Size = new System.Drawing.Size(780, 391);
+            this.panel2.Size = new System.Drawing.Size(780, 347);
             this.panel2.TabIndex = 4;
             // 
             // calendario1
             // 
             this.calendario1.BordeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
+            this.calendario1.ColorDia = System.Drawing.Color.White;
+            this.calendario1.ColorDiaSeleccionado = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
             this.calendario1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calendario1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.calendario1.FuenteDias = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.calendario1.FuenteDiasColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
+            this.calendario1.FuenteDiasColor = System.Drawing.Color.Silver;
             this.calendario1.Location = new System.Drawing.Point(10, 0);
             this.calendario1.MinimumSize = new System.Drawing.Size(150, 87);
             this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(760, 391);
+            this.calendario1.Size = new System.Drawing.Size(760, 347);
             this.calendario1.TabIndex = 0;
             this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
@@ -676,7 +678,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 616);
+            this.ClientSize = new System.Drawing.Size(800, 572);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tableLayoutPanel1);
