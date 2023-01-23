@@ -16,6 +16,7 @@ namespace Visual
 
         private void btnBajar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("a");
             pbFoto.ImageLocation = tbLink.Text;
         }
 
