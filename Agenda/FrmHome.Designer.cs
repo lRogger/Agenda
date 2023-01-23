@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnUser = new Individual.Visual.ComponentesMod.RJButton();
             this.panelMod18 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new Individual.Visual.ComponentesMod.RJButton();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +74,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.calendario1 = new Visual.UserControls.Calendario();
             this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panelMod18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,8 +100,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panelMod18);
-            this.panel1.Controls.Add(this.rjButton1);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.rjTextBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 10);
@@ -107,6 +108,44 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 45);
             this.panel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.btnUser);
+            this.flowLayoutPanel1.Controls.Add(this.panelMod18);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(580, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 41);
+            this.flowLayoutPanel1.TabIndex = 7;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUser.AutoSize = true;
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnUser.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnUser.BorderRadius = 0;
+            this.btnUser.BorderSize = 0;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.ForeColor = System.Drawing.Color.Black;
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUser.Location = new System.Drawing.Point(87, 5);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnUser.MinimumSize = new System.Drawing.Size(110, 0);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnUser.Size = new System.Drawing.Size(113, 30);
+            this.btnUser.TabIndex = 1;
+            this.btnUser.Text = "Rogger Párraga 🔻";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUser.TextColor = System.Drawing.Color.Black;
+            this.btnUser.UseVisualStyleBackColor = false;
             // 
             // panelMod18
             // 
@@ -118,7 +157,7 @@
             this.panelMod18.GradientAngle = 90F;
             this.panelMod18.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod18.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod18.Location = new System.Drawing.Point(622, 5);
+            this.panelMod18.Location = new System.Drawing.Point(49, 3);
             this.panelMod18.Name = "panelMod18";
             this.panelMod18.Size = new System.Drawing.Size(35, 35);
             this.panelMod18.TabIndex = 6;
@@ -128,33 +167,12 @@
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(35, 35);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 5;
             this.pictureBox10.TabStop = false;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton1.AutoSize = true;
-            this.rjButton1.BackColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(660, 7);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(119, 30);
-            this.rjButton1.TabIndex = 1;
-            this.rjButton1.Text = "Nombre Usuario 🔻";
-            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
-            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // rjTextBox2
             // 
@@ -689,6 +707,8 @@
             this.Text = "FrmHome";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.panelMod18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -758,7 +778,7 @@
         private UserControls.Calendario calendario1;
         private Individual.Visual.ComponentesMod.PanelMod panelMod18;
         private PictureBox pictureBox10;
-        private Individual.Visual.ComponentesMod.RJButton rjButton1;
+        private Individual.Visual.ComponentesMod.RJButton btnUser;
         private CustomControls.RJControls.RJTextBox rjTextBox2;
         private Individual.Visual.ComponentesMod.PanelMod panelMod16;
         private Individual.Visual.ComponentesMod.PanelMod panelMod17;
@@ -780,5 +800,6 @@
         private Label label14;
         private Label label11;
         private Label label12;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

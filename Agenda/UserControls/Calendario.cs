@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,9 +16,8 @@ namespace Visual.UserControls
     public partial class Calendario : UserControl
     {
         private int month, year;
-        Form parentForm;
-        List<UCDia> listaDias;
-
+        private List<UCDia> listaDias;
+        private DateTime diaSelected;
 
         //Propiedades
         private Color bordeColor;
@@ -38,7 +38,7 @@ namespace Visual.UserControls
         private Color colorDiaSeleccionado;
         [Description("Cambiar el color del día seleccionado")]
         [Category("Colores")]
-        [DefaultValue(typeof(Color), "Black")]
+        [DefaultValue(typeof(Color), "White")]
         public Color ColorDiaSeleccionado
         {
             get { return colorDiaSeleccionado; }
@@ -49,9 +49,10 @@ namespace Visual.UserControls
             }
         }
 
+
         //--
         private Color colorDia;
-        [Description("Cambiar el color del borde del día")]
+        [Description("Cambiar el color del día")]
         [Category("Colores")]
         [DefaultValue(typeof(Color), "Black")]
         public Color ColorDia
@@ -67,6 +68,7 @@ namespace Visual.UserControls
         //--
         [Description("Cambiar el tipo de texto de los dias")]
         [Category("Textos")]
+        [DefaultValue(typeof(Font), "Font.FontFamily,9,FontStyle.Regular")]
         public enum LabelTextOptions
         {
             Completo,
@@ -130,12 +132,12 @@ namespace Visual.UserControls
             }
         }
 
-        //-------------------------------------------------------------------------------
+        //--
 
         private Font fuenteDias;
         [Description("Cambiar la fuente de los días del Calendario")]
         [Category("Textos")]
-        [DefaultValue(typeof(Color), "Transparent")]
+        [DefaultValue(typeof(Font), "Font.FontFamily,9,FontStyle.Regular")]
         public Font FuenteDias
         {
             get { return fuenteDias; }
@@ -146,13 +148,15 @@ namespace Visual.UserControls
             }
         }
 
-        //--
+        //-------------------------------------------------------------------------------
+
+        //Constructor
         public Calendario()
         {
             InitializeComponent();
-            parentForm = new Form();
             fuenteDias = new Font(Font.FontFamily,9,FontStyle.Regular);
-            
+            diaSelected = DateTime.Now;
+
         }
 
 
@@ -176,6 +180,7 @@ namespace Visual.UserControls
 
             int cantidadDias = DateTime.DaysInMonth(year, month);
             int diaSemana = Convert.ToInt32(inicioMes.DayOfWeek.ToString("d"));
+            diaSemana = (diaSemana - 1 >= 0) ? diaSemana - 1 : 6;
 
 
             //Controles Anterior
@@ -184,7 +189,7 @@ namespace Visual.UserControls
             {
                 UCDia diasBlancos = new UCDia();
                 diasBlancos.ColorBorder= BordeColor;
-                diasBlancos.lblDia.Text = (diasMesAnterior-i).ToString();
+                diasBlancos.lblDia.Text = ((diasMesAnterior+i+1)-(diaSemana)).ToString();
                 diasBlancos.Enabled = false;
                 diasBlancos.Dock = DockStyle.Fill;
                 
@@ -223,19 +228,22 @@ namespace Visual.UserControls
         {
             Panel dia = (Panel)sender;
             UCDia ucdia = (UCDia)dia.Parent;
-
-            foreach(UCDia diasMes in listaDias)
+            foreach (UCDia diasMes in listaDias)
             {
-                if(diasMes.lblDia.Text != ucdia.lblDia.Text)
+                if (!diasMes.lblDia.Text.Equals(ucdia.lblDia.Text))
                 {
                     diasMes.panel1.BackColor = ColorDia;
                 }
                 else
                 {
                     ucdia.panel1.BackColor = ColorDiaSeleccionado;
+                    diaSelected = new DateTime(year, month, Convert.ToInt32(ucdia.lblDia.Text));
+                    
+
                 }
             }
-            
+            MessageBox.Show("Dia: " + diaSelected.Date.ToString("d"));
+
         }
 
 
@@ -254,19 +262,6 @@ namespace Visual.UserControls
                     
                     UCDia diasMes = (UCDia)c;
 
-                    /*
-                    float fontSize = Math.Min(panelMes.Width / 20.0f, panelMes.Height / 15.0f);
-                    if (fontSize <= 0)
-                    {
-                        fontSize = 1;
-                    }
-                    else if (fontSize > 17)
-                    {
-                        fontSize = 17;
-                    }
-                    diasMes.lblDia.Font = new Font(diasMes.lblDia.Font.Name,
-                    fontSize, diasMes.lblDia.Font.Style);
-                    */
                     if (diasMes.lblDia.Size.Height > c.Height)
                     {
                         while(diasMes.lblDia.Size.Height > c.Height)
@@ -302,7 +297,6 @@ namespace Visual.UserControls
                 
 
             }
-            panelMes.Refresh();
         }
 
 
@@ -327,6 +321,14 @@ namespace Visual.UserControls
             //parentForm.ResizeEnd += new EventHandler(Calendario_ResizeEnd);
             GenerarDias();
             //ResizeElementos();
+
+            foreach (UCDia diasMes in listaDias)
+            {
+                if (diasMes.lblDia.Text == DateTime.Now.Day.ToString())
+                {
+                    diasMes.panel1.BackColor = colorDiaSeleccionado;
+                }
+            }
         }
     }
 }

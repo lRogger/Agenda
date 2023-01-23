@@ -56,13 +56,13 @@
             this.panelMes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.panelMes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.panelMes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelMes.Controls.Add(this.lblDo, 0, 0);
-            this.panelMes.Controls.Add(this.lblLu, 1, 0);
-            this.panelMes.Controls.Add(this.lblMa, 2, 0);
-            this.panelMes.Controls.Add(this.lblMi, 3, 0);
-            this.panelMes.Controls.Add(this.lblJu, 4, 0);
-            this.panelMes.Controls.Add(this.lblVi, 5, 0);
-            this.panelMes.Controls.Add(this.lblSa, 6, 0);
+            this.panelMes.Controls.Add(this.lblDo, 6, 0);
+            this.panelMes.Controls.Add(this.lblLu, 0, 0);
+            this.panelMes.Controls.Add(this.lblMa, 1, 0);
+            this.panelMes.Controls.Add(this.lblMi, 2, 0);
+            this.panelMes.Controls.Add(this.lblJu, 3, 0);
+            this.panelMes.Controls.Add(this.lblVi, 4, 0);
+            this.panelMes.Controls.Add(this.lblSa, 5, 0);
             this.panelMes.Location = new System.Drawing.Point(5, 5);
             this.panelMes.Margin = new System.Windows.Forms.Padding(5);
             this.panelMes.Name = "panelMes";
@@ -82,10 +82,10 @@
             // 
             this.lblDo.BackColor = System.Drawing.Color.Transparent;
             this.lblDo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDo.Location = new System.Drawing.Point(0, 0);
+            this.lblDo.Location = new System.Drawing.Point(516, 0);
             this.lblDo.Margin = new System.Windows.Forms.Padding(0);
             this.lblDo.Name = "lblDo";
-            this.lblDo.Size = new System.Drawing.Size(86, 21);
+            this.lblDo.Size = new System.Drawing.Size(90, 21);
             this.lblDo.TabIndex = 0;
             this.lblDo.Text = "Do";
             this.lblDo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@
             // 
             this.lblLu.BackColor = System.Drawing.Color.Transparent;
             this.lblLu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLu.Location = new System.Drawing.Point(86, 0);
+            this.lblLu.Location = new System.Drawing.Point(0, 0);
             this.lblLu.Margin = new System.Windows.Forms.Padding(0);
             this.lblLu.Name = "lblLu";
             this.lblLu.Size = new System.Drawing.Size(86, 21);
@@ -106,7 +106,7 @@
             // 
             this.lblMa.BackColor = System.Drawing.Color.Transparent;
             this.lblMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMa.Location = new System.Drawing.Point(172, 0);
+            this.lblMa.Location = new System.Drawing.Point(86, 0);
             this.lblMa.Margin = new System.Windows.Forms.Padding(0);
             this.lblMa.Name = "lblMa";
             this.lblMa.Size = new System.Drawing.Size(86, 21);
@@ -118,7 +118,7 @@
             // 
             this.lblMi.BackColor = System.Drawing.Color.Transparent;
             this.lblMi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMi.Location = new System.Drawing.Point(258, 0);
+            this.lblMi.Location = new System.Drawing.Point(172, 0);
             this.lblMi.Margin = new System.Windows.Forms.Padding(0);
             this.lblMi.Name = "lblMi";
             this.lblMi.Size = new System.Drawing.Size(86, 21);
@@ -130,7 +130,7 @@
             // 
             this.lblJu.BackColor = System.Drawing.Color.Transparent;
             this.lblJu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblJu.Location = new System.Drawing.Point(344, 0);
+            this.lblJu.Location = new System.Drawing.Point(258, 0);
             this.lblJu.Margin = new System.Windows.Forms.Padding(0);
             this.lblJu.Name = "lblJu";
             this.lblJu.Size = new System.Drawing.Size(86, 21);
@@ -142,7 +142,7 @@
             // 
             this.lblVi.BackColor = System.Drawing.Color.Transparent;
             this.lblVi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblVi.Location = new System.Drawing.Point(430, 0);
+            this.lblVi.Location = new System.Drawing.Point(344, 0);
             this.lblVi.Margin = new System.Windows.Forms.Padding(0);
             this.lblVi.Name = "lblVi";
             this.lblVi.Size = new System.Drawing.Size(86, 21);
@@ -154,10 +154,10 @@
             // 
             this.lblSa.BackColor = System.Drawing.Color.Transparent;
             this.lblSa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSa.Location = new System.Drawing.Point(516, 0);
+            this.lblSa.Location = new System.Drawing.Point(430, 0);
             this.lblSa.Margin = new System.Windows.Forms.Padding(0);
             this.lblSa.Name = "lblSa";
-            this.lblSa.Size = new System.Drawing.Size(90, 21);
+            this.lblSa.Size = new System.Drawing.Size(86, 21);
             this.lblSa.TabIndex = 6;
             this.lblSa.Text = "Sa";
             this.lblSa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,7 +203,6 @@
         #endregion
 
         private TableLayoutPanel panelMes;
-        private Label lblDo;
         private Label lblLu;
         private Label lblMa;
         private Label lblMi;
@@ -211,5 +210,6 @@
         private Label lblVi;
         private Label lblSa;
         private TableLayoutPanel tableLayoutPanel1;
+        private Label lblDo;
     }
 }
