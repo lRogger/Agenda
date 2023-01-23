@@ -175,16 +175,17 @@ namespace Visual.UserControls
             DateTime inicioMes = new DateTime(year, month, 1);
 
             int cantidadDias = DateTime.DaysInMonth(year, month);
-
             int diaSemana = Convert.ToInt32(inicioMes.DayOfWeek.ToString("d"));
 
 
-            //Controles nulos
+            //Controles Anterior
+            int diasMesAnterior = DateTime.DaysInMonth(year, (month-1>0)?month-1:12);
             for (int i = 0; i < diaSemana; i++)
             {
                 UCDia diasBlancos = new UCDia();
                 diasBlancos.ColorBorder= BordeColor;
-                diasBlancos.lblDia.Text = "";
+                diasBlancos.lblDia.Text = (diasMesAnterior-i).ToString();
+                diasBlancos.Enabled = false;
                 diasBlancos.Dock = DockStyle.Fill;
                 
                 panelMes.Controls.Add(diasBlancos);
@@ -201,6 +202,20 @@ namespace Visual.UserControls
                 diasMes.panel1.Click += new EventHandler(Dia_Click);
                 panelMes.Controls.Add(diasMes);
                 listaDias.Add(diasMes);
+            }
+
+            //Controles Posterior
+            int diasMesPost = DateTime.DaysInMonth(year, (month+1>12)?1:month+1);
+            int veces = 42 - (cantidadDias + diaSemana);
+            for (int i = 0; i < veces; i++)
+            {
+                UCDia diasBlancos = new UCDia();
+                diasBlancos.ColorBorder = BordeColor;
+                diasBlancos.lblDia.Text = (i+1).ToString();
+                diasBlancos.Enabled = false;
+                diasBlancos.Dock = DockStyle.Fill;
+
+                panelMes.Controls.Add(diasBlancos);
             }
         }
 
