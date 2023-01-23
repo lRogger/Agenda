@@ -31,31 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnUser = new Individual.Visual.ComponentesMod.RJButton();
-            this.panelMod18 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pbUser = new System.Windows.Forms.PictureBox();
-            this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelMod16 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.panelMod17 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.panelMod14 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.panelMod15 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.panelMod12 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.panelMod13 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.panelMod10 = new Individual.Visual.ComponentesMod.PanelMod();
             this.label11 = new System.Windows.Forms.Label();
-            this.panelMod11 = new Individual.Visual.ComponentesMod.PanelMod();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -72,36 +61,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.calendario1 = new Visual.UserControls.Calendario();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panelMod18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panelMod16.SuspendLayout();
-            this.panelMod17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panelMod14.SuspendLayout();
-            this.panelMod15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panelMod12.SuspendLayout();
-            this.panelMod13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panelMod10.SuspendLayout();
-            this.panelMod11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.flowLayoutPanel1);
-            this.panel1.Controls.Add(this.rjTextBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
@@ -113,54 +88,12 @@
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.btnUser);
-            this.flowLayoutPanel1.Controls.Add(this.panelMod18);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(254, 2);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(526, 41);
             this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUser.AutoSize = true;
-            this.btnUser.BackColor = System.Drawing.Color.Transparent;
-            this.btnUser.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnUser.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnUser.BorderRadius = 0;
-            this.btnUser.BorderSize = 0;
-            this.btnUser.FlatAppearance.BorderSize = 0;
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.ForeColor = System.Drawing.Color.Black;
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUser.Location = new System.Drawing.Point(413, 5);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.btnUser.MinimumSize = new System.Drawing.Size(110, 0);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnUser.Size = new System.Drawing.Size(113, 30);
-            this.btnUser.TabIndex = 1;
-            this.btnUser.Text = "Rogger Párraga 🔻";
-            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUser.TextColor = System.Drawing.Color.Black;
-            this.btnUser.UseVisualStyleBackColor = false;
-            // 
-            // panelMod18
-            // 
-            this.panelMod18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMod18.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod18.BorderRadius = 40;
-            this.panelMod18.Controls.Add(this.pbUser);
-            this.panelMod18.ForeColor = System.Drawing.Color.Black;
-            this.panelMod18.GradientAngle = 90F;
-            this.panelMod18.GradientBottomColor = System.Drawing.Color.Transparent;
-            this.panelMod18.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod18.Location = new System.Drawing.Point(375, 3);
-            this.panelMod18.Name = "panelMod18";
-            this.panelMod18.Size = new System.Drawing.Size(35, 35);
-            this.panelMod18.TabIndex = 6;
             // 
             // pbUser
             // 
@@ -173,28 +106,6 @@
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbUser.TabIndex = 5;
             this.pbUser.TabStop = false;
-            // 
-            // rjTextBox2
-            // 
-            this.rjTextBox2.BackColor = System.Drawing.Color.Silver;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.Silver;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.Silver;
-            this.rjTextBox2.BorderRadius = 10;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox2.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox2.Location = new System.Drawing.Point(0, 6);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.White;
-            this.rjTextBox2.PlaceholderText = "🔎 Buscar";
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox2.TabIndex = 0;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
             // 
             // pictureBox1
             // 
@@ -227,10 +138,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.panelMod16, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelMod14, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelMod12, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelMod10, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 93);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -239,39 +146,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 79);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // panelMod16
-            // 
-            this.panelMod16.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod16.BorderRadius = 10;
-            this.panelMod16.Controls.Add(this.panelMod17);
-            this.panelMod16.Controls.Add(this.label17);
-            this.panelMod16.Controls.Add(this.label18);
-            this.panelMod16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMod16.ForeColor = System.Drawing.Color.Black;
-            this.panelMod16.GradientAngle = 90F;
-            this.panelMod16.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.panelMod16.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
-            this.panelMod16.Location = new System.Drawing.Point(590, 0);
-            this.panelMod16.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.panelMod16.Name = "panelMod16";
-            this.panelMod16.Size = new System.Drawing.Size(190, 79);
-            this.panelMod16.TabIndex = 3;
-            // 
-            // panelMod17
-            // 
-            this.panelMod17.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.panelMod17.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod17.BorderRadius = 40;
-            this.panelMod17.Controls.Add(this.pictureBox9);
-            this.panelMod17.ForeColor = System.Drawing.Color.Black;
-            this.panelMod17.GradientAngle = 90F;
-            this.panelMod17.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(228)))), ((int)(((byte)(223)))));
-            this.panelMod17.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(228)))), ((int)(((byte)(223)))));
-            this.panelMod17.Location = new System.Drawing.Point(130, 19);
-            this.panelMod17.Name = "panelMod17";
-            this.panelMod17.Size = new System.Drawing.Size(40, 40);
-            this.panelMod17.TabIndex = 5;
             // 
             // pictureBox9
             // 
@@ -309,39 +183,6 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "00";
             // 
-            // panelMod14
-            // 
-            this.panelMod14.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod14.BorderRadius = 10;
-            this.panelMod14.Controls.Add(this.panelMod15);
-            this.panelMod14.Controls.Add(this.label15);
-            this.panelMod14.Controls.Add(this.label16);
-            this.panelMod14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMod14.ForeColor = System.Drawing.Color.Black;
-            this.panelMod14.GradientAngle = 90F;
-            this.panelMod14.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(108)))), ((int)(((byte)(107)))));
-            this.panelMod14.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(108)))), ((int)(((byte)(107)))));
-            this.panelMod14.Location = new System.Drawing.Point(395, 0);
-            this.panelMod14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.panelMod14.Name = "panelMod14";
-            this.panelMod14.Size = new System.Drawing.Size(185, 79);
-            this.panelMod14.TabIndex = 2;
-            // 
-            // panelMod15
-            // 
-            this.panelMod15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.panelMod15.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod15.BorderRadius = 40;
-            this.panelMod15.Controls.Add(this.pictureBox8);
-            this.panelMod15.ForeColor = System.Drawing.Color.Black;
-            this.panelMod15.GradientAngle = 90F;
-            this.panelMod15.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.panelMod15.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.panelMod15.Location = new System.Drawing.Point(130, 19);
-            this.panelMod15.Name = "panelMod15";
-            this.panelMod15.Size = new System.Drawing.Size(40, 40);
-            this.panelMod15.TabIndex = 5;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -377,39 +218,6 @@
             this.label16.Size = new System.Drawing.Size(42, 32);
             this.label16.TabIndex = 0;
             this.label16.Text = "00";
-            // 
-            // panelMod12
-            // 
-            this.panelMod12.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod12.BorderRadius = 10;
-            this.panelMod12.Controls.Add(this.panelMod13);
-            this.panelMod12.Controls.Add(this.label13);
-            this.panelMod12.Controls.Add(this.label14);
-            this.panelMod12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMod12.ForeColor = System.Drawing.Color.Black;
-            this.panelMod12.GradientAngle = 90F;
-            this.panelMod12.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.Location = new System.Drawing.Point(200, 0);
-            this.panelMod12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.panelMod12.Name = "panelMod12";
-            this.panelMod12.Size = new System.Drawing.Size(185, 79);
-            this.panelMod12.TabIndex = 1;
-            // 
-            // panelMod13
-            // 
-            this.panelMod13.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.panelMod13.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod13.BorderRadius = 40;
-            this.panelMod13.Controls.Add(this.pictureBox7);
-            this.panelMod13.ForeColor = System.Drawing.Color.Black;
-            this.panelMod13.GradientAngle = 90F;
-            this.panelMod13.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
-            this.panelMod13.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
-            this.panelMod13.Location = new System.Drawing.Point(130, 19);
-            this.panelMod13.Name = "panelMod13";
-            this.panelMod13.Size = new System.Drawing.Size(40, 40);
-            this.panelMod13.TabIndex = 5;
             // 
             // pictureBox7
             // 
@@ -447,25 +255,6 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "00";
             // 
-            // panelMod10
-            // 
-            this.panelMod10.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod10.BorderRadius = 10;
-            this.panelMod10.Controls.Add(this.label11);
-            this.panelMod10.Controls.Add(this.panelMod11);
-            this.panelMod10.Controls.Add(this.label12);
-            this.panelMod10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMod10.ForeColor = System.Drawing.Color.Black;
-            this.panelMod10.GradientAngle = 90F;
-            this.panelMod10.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
-            this.panelMod10.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
-            this.panelMod10.Location = new System.Drawing.Point(0, 0);
-            this.panelMod10.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.panelMod10.Name = "panelMod10";
-            this.panelMod10.Size = new System.Drawing.Size(190, 79);
-            this.panelMod10.TabIndex = 0;
-            this.panelMod10.DoubleClick += new System.EventHandler(this.panelMod10_DoubleClick);
-            // 
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -479,20 +268,6 @@
             this.label11.Size = new System.Drawing.Size(54, 13);
             this.label11.TabIndex = 7;
             this.label11.Text = "Para Hoy";
-            // 
-            // panelMod11
-            // 
-            this.panelMod11.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod11.BorderRadius = 40;
-            this.panelMod11.Controls.Add(this.pictureBox6);
-            this.panelMod11.ForeColor = System.Drawing.Color.Black;
-            this.panelMod11.GradientAngle = 90F;
-            this.panelMod11.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(195)))), ((int)(((byte)(110)))));
-            this.panelMod11.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(195)))), ((int)(((byte)(110)))));
-            this.panelMod11.Location = new System.Drawing.Point(130, 19);
-            this.panelMod11.Name = "panelMod11";
-            this.panelMod11.Size = new System.Drawing.Size(40, 40);
-            this.panelMod11.TabIndex = 5;
             // 
             // pictureBox6
             // 
@@ -667,29 +442,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.calendario1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(10, 215);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.panel2.Size = new System.Drawing.Size(780, 347);
             this.panel2.TabIndex = 4;
-            // 
-            // calendario1
-            // 
-            this.calendario1.BordeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
-            this.calendario1.ColorDia = System.Drawing.Color.White;
-            this.calendario1.ColorDiaSeleccionado = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(249)))));
-            this.calendario1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calendario1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.calendario1.FuenteDias = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.calendario1.FuenteDiasColor = System.Drawing.Color.Silver;
-            this.calendario1.Location = new System.Drawing.Point(10, 0);
-            this.calendario1.MinimumSize = new System.Drawing.Size(150, 87);
-            this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(760, 347);
-            this.calendario1.TabIndex = 0;
-            this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
             // FrmHome
             // 
@@ -708,33 +466,16 @@
             this.Text = "FrmHome";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.panelMod18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panelMod16.ResumeLayout(false);
-            this.panelMod16.PerformLayout();
-            this.panelMod17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panelMod14.ResumeLayout(false);
-            this.panelMod14.PerformLayout();
-            this.panelMod15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panelMod12.ResumeLayout(false);
-            this.panelMod12.PerformLayout();
-            this.panelMod13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panelMod10.ResumeLayout(false);
-            this.panelMod10.PerformLayout();
-            this.panelMod11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
