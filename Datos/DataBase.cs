@@ -47,7 +47,7 @@ namespace Datos
                         command.Parameters.AddWithValue("@Password", persona.Password);
                         command.Parameters.AddWithValue("@Correo", persona.Correo);
                         command.Parameters.AddWithValue("@Admin", persona.Admin);
-                        command.Parameters.AddWithValue("@Imagen", persona.Imagen);
+                        command.Parameters.AddWithValue("@Imagen", JsonConvert.SerializeObject(persona.Imagen));
 
                         command.ExecuteNonQuery();
                     }

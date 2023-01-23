@@ -28,23 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbFoto = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Foto));
             this.btnSubir = new System.Windows.Forms.Button();
             this.btnBajar = new System.Windows.Forms.Button();
             this.tbLink = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbHash = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            this.pbImg = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImg)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbFoto
-            // 
-            this.pbFoto.Location = new System.Drawing.Point(112, 66);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(111, 190);
-            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFoto.TabIndex = 0;
-            this.pbFoto.TabStop = false;
             // 
             // btnSubir
             // 
@@ -90,32 +82,41 @@
             this.tbHash.Size = new System.Drawing.Size(100, 23);
             this.tbHash.TabIndex = 5;
             // 
+            // pbImg
+            // 
+            this.pbImg.Image = ((System.Drawing.Image)(resources.GetObject("pbImg.Image")));
+            this.pbImg.Location = new System.Drawing.Point(77, 119);
+            this.pbImg.Name = "pbImg";
+            this.pbImg.Size = new System.Drawing.Size(155, 138);
+            this.pbImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImg.TabIndex = 6;
+            this.pbImg.TabStop = false;
+            // 
             // Foto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pbImg);
             this.Controls.Add(this.tbHash);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbLink);
             this.Controls.Add(this.btnBajar);
             this.Controls.Add(this.btnSubir);
-            this.Controls.Add(this.pbFoto);
             this.Name = "Foto";
             this.Text = "Foto";
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private PictureBox pbFoto;
         private Button btnSubir;
         private Button btnBajar;
         private TextBox tbLink;
         private Button button1;
         private TextBox tbHash;
+        private PictureBox pbImg;
     }
 }

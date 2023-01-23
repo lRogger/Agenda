@@ -16,8 +16,7 @@ namespace Visual
 
         private void btnBajar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("a");
-            pbFoto.ImageLocation = tbLink.Text;
+            pbImg.ImageLocation = tbLink.Text;
         }
 
 
@@ -25,18 +24,18 @@ namespace Visual
         {
 
             //SUBIR IMAGEN
-            Image img = pbFoto.Image;
+            Image img = pbImg.Image;
             byte[] imageBytes;
             using (MemoryStream ms = new MemoryStream())
             {
                 img.Save(ms, ImageFormat.Jpeg);
                 imageBytes = ms.ToArray();
             }
-
-            Imgur imgur = new Imgur();
-            imgur.SubirImagen(imageBytes);
-
             Persona p = new Persona();
+            Imgur imgur = new Imgur();
+
+            p.Imagen = await imgur.SubirImagen(imageBytes);
+            MessageBox.Show(p.Imagen.ToString());
             p.Nombre = "Rogger Parraga";
             p.Cedula = "0930555420";
             p.Correo = "roggerp98@gmail.com";
@@ -44,6 +43,7 @@ namespace Visual
             p.Password = "Hola";
             p.Admin = true;
             p.Imagen = imgur.Json;
+
 
             DataBase db = new DataBase();
             db.Insertar(p);

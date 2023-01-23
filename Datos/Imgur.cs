@@ -2,14 +2,15 @@
 using Newtonsoft.Json;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 namespace Datos
 {
     public class Imgur
     {
-        private string json;
+        private dynamic json;
 
-        public string Json { get => json!; set => json = value; }
+        public dynamic Json { get => json; set => json = value; }
 
         public Imgur()
         {
@@ -17,7 +18,7 @@ namespace Datos
         }
 
 
-        public async void SubirImagen(byte[] imgBt)
+        public async Task<dynamic> SubirImagen(byte[] imgBt)
         {
             string apiKey = "f84f7d23f1f95ec";
 
@@ -38,15 +39,17 @@ namespace Datos
                 {
                     var responseJson = await response.Content.ReadAsStringAsync();
                     dynamic jsonData = JsonConvert.DeserializeObject(responseJson)!;
-
-                    Json = JsonConvert.DeserializeObject(jsonData);
-
+                    Json = jsonData;
+                    //Json = JsonConvert.SerializeObject(jsonData);
+                    //Debug.WriteLine(Json);
                 }
                 else
                 {
-                    
+                    Debug.WriteLine("FAIL");
+                    Json = "FAIL";
                 }
             }
+            return Json;
         }
     }
 }
