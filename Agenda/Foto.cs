@@ -79,5 +79,17 @@ namespace Visual
         {
             pbImg.ImageLocation = tbLink.Text;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            abrirImagen.Filter = "JPG files (*.jpg)|*.jpg";
+
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                pbImg.ImageLocation = abrirImagen.FileName;
+                pbImg.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.tbHash = new System.Windows.Forms.TextBox();
             this.pbImg = new System.Windows.Forms.PictureBox();
             this.btnCargar = new Individual.Visual.ComponentesMod.RJButton();
+            this.btnBuscar = new Individual.Visual.ComponentesMod.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,11 +102,31 @@
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBuscar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBuscar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBuscar.BorderRadius = 0;
+            this.btnBuscar.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(77, 263);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(155, 40);
+            this.btnBuscar.TabIndex = 8;
+            this.btnBuscar.Text = "rjButton1";
+            this.btnBuscar.TextColor = System.Drawing.Color.White;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // Foto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.pbImg);
             this.Controls.Add(this.tbHash);
@@ -127,5 +148,6 @@
         private TextBox tbHash;
         private PictureBox pbImg;
         private Individual.Visual.ComponentesMod.RJButton btnCargar;
+        private Individual.Visual.ComponentesMod.RJButton btnBuscar;
     }
 }
