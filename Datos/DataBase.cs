@@ -54,5 +54,28 @@ namespace Datos
                 }
             }
         }
+
+        public async Task<DataSet> consultar(string cmd)
+        {
+
+            DataSet ds = new DataSet();
+
+            try
+            {
+
+                await using (MySqlConnection connection = new MySqlConnection(strCon))
+                {
+                    connection.Open();
+                    MySqlDataAdapter dp = new MySqlDataAdapter(cmd, connection);
+                    dp.Fill(ds);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error:" + e.Message);
+
+            }
+            return ds;
+        }
     }
 }

@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Foto));
             this.btnSubir = new System.Windows.Forms.Button();
-            this.btnBajar = new System.Windows.Forms.Button();
             this.tbLink = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbHash = new System.Windows.Forms.TextBox();
             this.pbImg = new System.Windows.Forms.PictureBox();
+            this.btnCargar = new Individual.Visual.ComponentesMod.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +47,6 @@
             this.btnSubir.Text = "Enviar";
             this.btnSubir.UseVisualStyleBackColor = true;
             this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
-            // 
-            // btnBajar
-            // 
-            this.btnBajar.Location = new System.Drawing.Point(311, 175);
-            this.btnBajar.Name = "btnBajar";
-            this.btnBajar.Size = new System.Drawing.Size(154, 67);
-            this.btnBajar.TabIndex = 2;
-            this.btnBajar.Text = "Cargar";
-            this.btnBajar.UseVisualStyleBackColor = true;
-            this.btnBajar.Click += new System.EventHandler(this.btnBajar_Click);
             // 
             // tbLink
             // 
@@ -92,16 +82,35 @@
             this.pbImg.TabIndex = 6;
             this.pbImg.TabStop = false;
             // 
+            // btnCargar
+            // 
+            this.btnCargar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnCargar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnCargar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCargar.BorderRadius = 0;
+            this.btnCargar.BorderSize = 0;
+            this.btnCargar.FlatAppearance.BorderSize = 0;
+            this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargar.ForeColor = System.Drawing.Color.White;
+            this.btnCargar.Location = new System.Drawing.Point(310, 188);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(150, 40);
+            this.btnCargar.TabIndex = 7;
+            this.btnCargar.Text = "rjButton1";
+            this.btnCargar.TextColor = System.Drawing.Color.White;
+            this.btnCargar.UseVisualStyleBackColor = false;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
             // Foto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.pbImg);
             this.Controls.Add(this.tbHash);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbLink);
-            this.Controls.Add(this.btnBajar);
             this.Controls.Add(this.btnSubir);
             this.Name = "Foto";
             this.Text = "Foto";
@@ -113,10 +122,10 @@
 
         #endregion
         private Button btnSubir;
-        private Button btnBajar;
         private TextBox tbLink;
         private Button button1;
         private TextBox tbHash;
         private PictureBox pbImg;
+        private Individual.Visual.ComponentesMod.RJButton btnCargar;
     }
 }

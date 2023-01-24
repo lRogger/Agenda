@@ -165,7 +165,6 @@
             // pbUser
             // 
             this.pbUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
             this.pbUser.Location = new System.Drawing.Point(0, 0);
             this.pbUser.Margin = new System.Windows.Forms.Padding(0);
             this.pbUser.Name = "pbUser";
@@ -707,6 +706,7 @@
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
+            this.Load += new System.EventHandler(this.FrmHome_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

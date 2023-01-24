@@ -74,5 +74,10 @@ namespace Visual
                 }
             }
         }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            pbImg.ImageLocation = tbLink.Text;
+        }
     }
 }
