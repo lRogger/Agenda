@@ -32,6 +32,7 @@ namespace Datos
                 content.Add(new ByteArrayContent(imgBt), "image", "image.jpg");
                 content.Add(new StringContent("hidden"), "privacy");
                 content.Add(new StringContent("Prueba Cedula"), "title");
+                //content.Add(new StringContent(true.ToString()), "in_gallery");
 
 
                 // Envía la solicitud a la URL de la API de Imgur

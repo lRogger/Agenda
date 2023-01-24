@@ -93,7 +93,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 45);
+            this.panel1.Size = new System.Drawing.Size(774, 45);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -101,7 +101,7 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.btnUser);
             this.flowLayoutPanel1.Controls.Add(this.pbUser);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(348, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(324, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
@@ -200,10 +200,10 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34F));
             this.tableLayoutPanel1.Controls.Add(this.panelMod14, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod12, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod10, 0, 0);
@@ -218,7 +218,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(798, 486);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(774, 486);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panelMod14
@@ -232,10 +232,10 @@
             this.panelMod14.GradientAngle = 90F;
             this.panelMod14.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod14.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod14.Location = new System.Drawing.Point(403, 0);
+            this.panelMod14.Location = new System.Drawing.Point(345, 0);
             this.panelMod14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod14.Name = "panelMod14";
-            this.panelMod14.Size = new System.Drawing.Size(189, 97);
+            this.panelMod14.Size = new System.Drawing.Size(160, 97);
             this.panelMod14.TabIndex = 2;
             // 
             // label15
@@ -277,10 +277,10 @@
             this.panelMod12.GradientAngle = 90F;
             this.panelMod12.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
             this.panelMod12.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.Location = new System.Drawing.Point(204, 0);
+            this.panelMod12.Location = new System.Drawing.Point(175, 0);
             this.panelMod12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod12.Name = "panelMod12";
-            this.panelMod12.Size = new System.Drawing.Size(189, 97);
+            this.panelMod12.Size = new System.Drawing.Size(160, 97);
             this.panelMod12.TabIndex = 1;
             // 
             // panelMod13
@@ -293,7 +293,7 @@
             this.panelMod13.GradientAngle = 90F;
             this.panelMod13.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
             this.panelMod13.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
-            this.panelMod13.Location = new System.Drawing.Point(225, 28);
+            this.panelMod13.Location = new System.Drawing.Point(196, 28);
             this.panelMod13.Name = "panelMod13";
             this.panelMod13.Size = new System.Drawing.Size(40, 40);
             this.panelMod13.TabIndex = 5;
@@ -348,7 +348,7 @@
             this.panelMod10.Location = new System.Drawing.Point(0, 0);
             this.panelMod10.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.panelMod10.Name = "panelMod10";
-            this.panelMod10.Size = new System.Drawing.Size(194, 97);
+            this.panelMod10.Size = new System.Drawing.Size(165, 97);
             this.panelMod10.TabIndex = 0;
             this.panelMod10.Click += new System.EventHandler(this.panelMod10_Click);
             this.panelMod10.DoubleClick += new System.EventHandler(this.panelMod10_DoubleClick);
@@ -389,11 +389,11 @@
             this.panelMod1.GradientAngle = 90F;
             this.panelMod1.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod1.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod1.Location = new System.Drawing.Point(597, 0);
+            this.panelMod1.Location = new System.Drawing.Point(510, 0);
             this.panelMod1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.panelMod1.Name = "panelMod1";
             this.tableLayoutPanel1.SetRowSpan(this.panelMod1, 3);
-            this.panelMod1.Size = new System.Drawing.Size(201, 478);
+            this.panelMod1.Size = new System.Drawing.Size(264, 478);
             this.panelMod1.TabIndex = 3;
             // 
             // calendario1
@@ -408,7 +408,7 @@
             this.calendario1.Location = new System.Drawing.Point(3, 172);
             this.calendario1.MinimumSize = new System.Drawing.Size(150, 100);
             this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(591, 311);
+            this.calendario1.Size = new System.Drawing.Size(504, 311);
             this.calendario1.TabIndex = 4;
             this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
@@ -423,7 +423,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(591, 66);
+            this.panel2.Size = new System.Drawing.Size(504, 66);
             this.panel2.TabIndex = 5;
             // 
             // btnEliminar
@@ -437,7 +437,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(496, 38);
+            this.btnEliminar.Location = new System.Drawing.Point(409, 38);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 25);
             this.btnEliminar.TabIndex = 4;
@@ -456,7 +456,7 @@
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(401, 38);
+            this.rjButton1.Location = new System.Drawing.Point(314, 38);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(92, 25);
             this.rjButton1.TabIndex = 3;
@@ -475,7 +475,7 @@
             this.btnCrearTarea.FlatAppearance.BorderSize = 0;
             this.btnCrearTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearTarea.ForeColor = System.Drawing.Color.White;
-            this.btnCrearTarea.Location = new System.Drawing.Point(305, 38);
+            this.btnCrearTarea.Location = new System.Drawing.Point(218, 38);
             this.btnCrearTarea.Name = "btnCrearTarea";
             this.btnCrearTarea.Size = new System.Drawing.Size(92, 25);
             this.btnCrearTarea.TabIndex = 2;
@@ -647,7 +647,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(818, 589);
+            this.ClientSize = new System.Drawing.Size(794, 589);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
