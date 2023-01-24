@@ -30,6 +30,9 @@ namespace Datos
                 // Crea un nuevo objeto MultipartFormDataContent y agrega el arreglo de bytes de la imagen
                 var content = new MultipartFormDataContent();
                 content.Add(new ByteArrayContent(imgBt), "image", "image.jpg");
+                content.Add(new StringContent("hidden"), "privacy");
+                content.Add(new StringContent("Prueba Cedula"), "title");
+
 
                 // Envía la solicitud a la URL de la API de Imgur
                 var response = await client.PostAsync("https://api.imgur.com/3/image", content);
@@ -40,8 +43,7 @@ namespace Datos
                     var responseJson = await response.Content.ReadAsStringAsync();
                     dynamic jsonData = JsonConvert.DeserializeObject(responseJson)!;
                     Json = jsonData;
-                    //Json = JsonConvert.SerializeObject(jsonData);
-                    //Debug.WriteLine(Json);
+
                 }
                 else
                 {
