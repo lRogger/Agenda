@@ -119,7 +119,7 @@
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(526, 41);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(526, 46);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // btnUser
@@ -157,9 +157,9 @@
             this.panelMod18.GradientAngle = 90F;
             this.panelMod18.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod18.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod18.Location = new System.Drawing.Point(375, 3);
+            this.panelMod18.Location = new System.Drawing.Point(370, 3);
             this.panelMod18.Name = "panelMod18";
-            this.panelMod18.Size = new System.Drawing.Size(35, 35);
+            this.panelMod18.Size = new System.Drawing.Size(40, 40);
             this.panelMod18.TabIndex = 6;
             // 
             // pbUser
@@ -168,7 +168,7 @@
             this.pbUser.Location = new System.Drawing.Point(0, 0);
             this.pbUser.Margin = new System.Windows.Forms.Padding(0);
             this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(35, 35);
+            this.pbUser.Size = new System.Drawing.Size(40, 40);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbUser.TabIndex = 5;
             this.pbUser.TabStop = false;
