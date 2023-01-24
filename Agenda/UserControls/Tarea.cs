@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Individual.Visual.ComponentesMod;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Visual
+namespace Visual.UserControls
 {
-    public partial class listaTareas : Form
+    public partial class Tarea : UserControl
     {
-        public listaTareas()
+        public Tarea()
         {
             InitializeComponent();
+            
         }
     }
 }

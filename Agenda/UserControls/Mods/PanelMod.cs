@@ -65,14 +65,15 @@ namespace Individual.Visual.ComponentesMod
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
+            
             //Gradiente
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             LinearGradientBrush brushArtan = new LinearGradientBrush(ClientRectangle,
                 gradientTopColor, gradientBottomColor, GradientAngle);
             Graphics graphicsArtan = e.Graphics;
             graphicsArtan.FillRectangle(brushArtan, ClientRectangle);
-
+            
+            
             //BorderRadius
             RectangleF rectangleF = new RectangleF(0, 0, Width, Height);
             if (borderRadius > 2)
@@ -86,7 +87,8 @@ namespace Individual.Visual.ComponentesMod
                 }
             }
             else Region = new Region(rectangleF);
-
+            
+            
         }
 
     }

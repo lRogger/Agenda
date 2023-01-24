@@ -48,7 +48,7 @@
             this.panelMod10 = new Individual.Visual.ComponentesMod.PanelMod();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.panelMod1 = new Individual.Visual.ComponentesMod.PanelMod();
+            this.panelLista = new Individual.Visual.ComponentesMod.PanelMod();
             this.calendario1 = new Visual.UserControls.Calendario();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnEliminar = new Individual.Visual.ComponentesMod.RJButton();
@@ -93,7 +93,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(774, 45);
+            this.panel1.Size = new System.Drawing.Size(764, 45);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -101,7 +101,7 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.btnUser);
             this.flowLayoutPanel1.Controls.Add(this.pbUser);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(324, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(314, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
@@ -207,7 +207,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panelMod14, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod12, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod10, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelMod1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelLista, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.calendario1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -218,12 +218,12 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(774, 486);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(764, 458);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panelMod14
             // 
-            this.panelMod14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(108)))), ((int)(((byte)(107)))));
+            this.panelMod14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(204)))), ((int)(((byte)(196)))));
             this.panelMod14.BorderRadius = 10;
             this.panelMod14.Controls.Add(this.label15);
             this.panelMod14.Controls.Add(this.label16);
@@ -232,11 +232,12 @@
             this.panelMod14.GradientAngle = 90F;
             this.panelMod14.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod14.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod14.Location = new System.Drawing.Point(345, 0);
+            this.panelMod14.Location = new System.Drawing.Point(341, 0);
             this.panelMod14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod14.Name = "panelMod14";
-            this.panelMod14.Size = new System.Drawing.Size(160, 97);
+            this.panelMod14.Size = new System.Drawing.Size(158, 91);
             this.panelMod14.TabIndex = 2;
+            this.panelMod14.DoubleClick += new System.EventHandler(this.panelMod14_DoubleClick);
             // 
             // label15
             // 
@@ -245,7 +246,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(9, 64);
+            this.label15.Location = new System.Drawing.Point(9, 58);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(100, 13);
@@ -277,11 +278,12 @@
             this.panelMod12.GradientAngle = 90F;
             this.panelMod12.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
             this.panelMod12.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.Location = new System.Drawing.Point(175, 0);
+            this.panelMod12.Location = new System.Drawing.Point(173, 0);
             this.panelMod12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod12.Name = "panelMod12";
-            this.panelMod12.Size = new System.Drawing.Size(160, 97);
+            this.panelMod12.Size = new System.Drawing.Size(158, 91);
             this.panelMod12.TabIndex = 1;
+            this.panelMod12.DoubleClick += new System.EventHandler(this.panelMod12_DoubleClick);
             // 
             // panelMod13
             // 
@@ -293,7 +295,7 @@
             this.panelMod13.GradientAngle = 90F;
             this.panelMod13.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
             this.panelMod13.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
-            this.panelMod13.Location = new System.Drawing.Point(196, 28);
+            this.panelMod13.Location = new System.Drawing.Point(194, 25);
             this.panelMod13.Name = "panelMod13";
             this.panelMod13.Size = new System.Drawing.Size(40, 40);
             this.panelMod13.TabIndex = 5;
@@ -314,7 +316,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(9, 64);
+            this.label13.Location = new System.Drawing.Point(9, 58);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(76, 13);
@@ -348,7 +350,7 @@
             this.panelMod10.Location = new System.Drawing.Point(0, 0);
             this.panelMod10.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.panelMod10.Name = "panelMod10";
-            this.panelMod10.Size = new System.Drawing.Size(165, 97);
+            this.panelMod10.Size = new System.Drawing.Size(163, 91);
             this.panelMod10.TabIndex = 0;
             this.panelMod10.Click += new System.EventHandler(this.panelMod10_Click);
             this.panelMod10.DoubleClick += new System.EventHandler(this.panelMod10_DoubleClick);
@@ -360,7 +362,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(14, 65);
+            this.label11.Location = new System.Drawing.Point(14, 59);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 13);
@@ -380,21 +382,21 @@
             this.label12.TabIndex = 6;
             this.label12.Text = "00";
             // 
-            // panelMod1
+            // panelLista
             // 
-            this.panelMod1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panelMod1.BorderRadius = 30;
-            this.panelMod1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMod1.ForeColor = System.Drawing.Color.Black;
-            this.panelMod1.GradientAngle = 90F;
-            this.panelMod1.GradientBottomColor = System.Drawing.Color.Transparent;
-            this.panelMod1.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod1.Location = new System.Drawing.Point(510, 0);
-            this.panelMod1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.panelMod1.Name = "panelMod1";
-            this.tableLayoutPanel1.SetRowSpan(this.panelMod1, 3);
-            this.panelMod1.Size = new System.Drawing.Size(264, 478);
-            this.panelMod1.TabIndex = 3;
+            this.panelLista.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelLista.BorderRadius = 10;
+            this.panelLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLista.ForeColor = System.Drawing.Color.Black;
+            this.panelLista.GradientAngle = 90F;
+            this.panelLista.GradientBottomColor = System.Drawing.Color.Transparent;
+            this.panelLista.GradientTopColor = System.Drawing.Color.Transparent;
+            this.panelLista.Location = new System.Drawing.Point(504, 0);
+            this.panelLista.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.panelLista.Name = "panelLista";
+            this.tableLayoutPanel1.SetRowSpan(this.panelLista, 3);
+            this.panelLista.Size = new System.Drawing.Size(260, 450);
+            this.panelLista.TabIndex = 3;
             // 
             // calendario1
             // 
@@ -405,10 +407,10 @@
             this.calendario1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calendario1.FuenteDias = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.calendario1.FuenteDiasColor = System.Drawing.Color.Empty;
-            this.calendario1.Location = new System.Drawing.Point(3, 172);
+            this.calendario1.Location = new System.Drawing.Point(3, 162);
             this.calendario1.MinimumSize = new System.Drawing.Size(150, 100);
             this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(504, 311);
+            this.calendario1.Size = new System.Drawing.Size(498, 293);
             this.calendario1.TabIndex = 4;
             this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
@@ -421,9 +423,9 @@
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 100);
+            this.panel2.Location = new System.Drawing.Point(3, 94);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(504, 66);
+            this.panel2.Size = new System.Drawing.Size(498, 62);
             this.panel2.TabIndex = 5;
             // 
             // btnEliminar
@@ -437,7 +439,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(409, 38);
+            this.btnEliminar.Location = new System.Drawing.Point(403, 34);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 25);
             this.btnEliminar.TabIndex = 4;
@@ -456,7 +458,7 @@
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(314, 38);
+            this.rjButton1.Location = new System.Drawing.Point(308, 34);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(92, 25);
             this.rjButton1.TabIndex = 3;
@@ -475,7 +477,7 @@
             this.btnCrearTarea.FlatAppearance.BorderSize = 0;
             this.btnCrearTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearTarea.ForeColor = System.Drawing.Color.White;
-            this.btnCrearTarea.Location = new System.Drawing.Point(218, 38);
+            this.btnCrearTarea.Location = new System.Drawing.Point(212, 34);
             this.btnCrearTarea.Name = "btnCrearTarea";
             this.btnCrearTarea.Size = new System.Drawing.Size(92, 25);
             this.btnCrearTarea.TabIndex = 2;
@@ -488,7 +490,7 @@
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(0, 29);
+            this.label17.Location = new System.Drawing.Point(0, 25);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(207, 37);
@@ -498,6 +500,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(4, 4);
@@ -647,15 +650,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(794, 589);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(800, 550);
             this.Name = "FrmHome";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
             this.Load += new System.EventHandler(this.FrmHome_Load);
+            this.Resize += new System.EventHandler(this.FrmHome_Resize);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -730,7 +735,7 @@
         private Label label12;
         private FlowLayoutPanel flowLayoutPanel1;
         private CustomControls.RJControls.RJCircularPictureBox pbUser;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod1;
+        private Individual.Visual.ComponentesMod.PanelMod panelLista;
         private UserControls.Calendario calendario1;
         private Panel panel2;
         private Individual.Visual.ComponentesMod.RJButton btnEliminar;
