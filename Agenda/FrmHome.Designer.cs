@@ -231,6 +231,7 @@
             this.panelMod14.BorderRadius = 10;
             this.panelMod14.Controls.Add(this.label15);
             this.panelMod14.Controls.Add(this.label16);
+            this.panelMod14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelMod14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod14.ForeColor = System.Drawing.Color.Black;
             this.panelMod14.GradientAngle = 90F;
@@ -259,6 +260,9 @@
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -277,6 +281,7 @@
             this.panelMod12.Controls.Add(this.panelMod13);
             this.panelMod12.Controls.Add(this.label13);
             this.panelMod12.Controls.Add(this.label14);
+            this.panelMod12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelMod12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod12.ForeColor = System.Drawing.Color.Black;
             this.panelMod12.GradientAngle = 90F;
@@ -329,6 +334,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -346,6 +352,7 @@
             this.panelMod10.BorderRadius = 10;
             this.panelMod10.Controls.Add(this.label11);
             this.panelMod10.Controls.Add(this.label12);
+            this.panelMod10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelMod10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod10.ForeColor = System.Drawing.Color.Black;
             this.panelMod10.GradientAngle = 90F;
@@ -375,6 +382,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -520,17 +528,17 @@
             this.tPanelCheckList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
             this.tPanelCheckList.Name = "tPanelCheckList";
             this.tPanelCheckList.RowCount = 11;
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
             this.tPanelCheckList.Size = new System.Drawing.Size(260, 448);
             this.tPanelCheckList.TabIndex = 0;
             // 
@@ -542,7 +550,7 @@
             this.lblCheckList.Location = new System.Drawing.Point(10, 0);
             this.lblCheckList.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.lblCheckList.Name = "lblCheckList";
-            this.lblCheckList.Size = new System.Drawing.Size(247, 40);
+            this.lblCheckList.Size = new System.Drawing.Size(247, 44);
             this.lblCheckList.TabIndex = 0;
             this.lblCheckList.Text = "CheckList";
             this.lblCheckList.TextAlign = System.Drawing.ContentAlignment.BottomLeft;

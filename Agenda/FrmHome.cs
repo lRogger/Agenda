@@ -77,7 +77,9 @@ namespace Visual
                 t.tPanelPrim.Click += new EventHandler(Tarea_Click!);
                 t.lblTarea.Click += new EventHandler(Tarea_Click!);
                 tPanelCheckList.Controls.Add(t, 0, count);
+                t.Dock = DockStyle.Fill;
                 checkList.Add(t);
+                
                 count++;
             }
 
@@ -180,7 +182,6 @@ namespace Visual
             panelLista.Controls.Clear();
             panelLista.Controls.Add(lt);
             lt.Dock = DockStyle.Fill;
-            MessageBox.Show(this.Width.ToString() + "," + this.Height.ToString());
         }
     }
 }
