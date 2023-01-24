@@ -56,6 +56,8 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panelLista = new System.Windows.Forms.Panel();
+            this.tPanelCheckList = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCheckList = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -79,6 +81,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelMod10.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelLista.SuspendLayout();
+            this.tPanelCheckList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -496,6 +500,7 @@
             // panelLista
             // 
             this.panelLista.BackColor = System.Drawing.Color.Transparent;
+            this.panelLista.Controls.Add(this.tPanelCheckList);
             this.panelLista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLista.Location = new System.Drawing.Point(504, 2);
             this.panelLista.Margin = new System.Windows.Forms.Padding(0, 2, 0, 8);
@@ -503,6 +508,44 @@
             this.tableLayoutPanel1.SetRowSpan(this.panelLista, 3);
             this.panelLista.Size = new System.Drawing.Size(260, 448);
             this.panelLista.TabIndex = 6;
+            // 
+            // tPanelCheckList
+            // 
+            this.tPanelCheckList.BackColor = System.Drawing.Color.White;
+            this.tPanelCheckList.ColumnCount = 1;
+            this.tPanelCheckList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tPanelCheckList.Controls.Add(this.lblCheckList, 0, 0);
+            this.tPanelCheckList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tPanelCheckList.Location = new System.Drawing.Point(0, 0);
+            this.tPanelCheckList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
+            this.tPanelCheckList.Name = "tPanelCheckList";
+            this.tPanelCheckList.RowCount = 11;
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tPanelCheckList.Size = new System.Drawing.Size(260, 448);
+            this.tPanelCheckList.TabIndex = 0;
+            // 
+            // lblCheckList
+            // 
+            this.lblCheckList.AutoSize = true;
+            this.lblCheckList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCheckList.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCheckList.Location = new System.Drawing.Point(10, 0);
+            this.lblCheckList.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblCheckList.Name = "lblCheckList";
+            this.lblCheckList.Size = new System.Drawing.Size(247, 40);
+            this.lblCheckList.TabIndex = 0;
+            this.lblCheckList.Text = "CheckList";
+            this.lblCheckList.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // pictureBox5
             // 
@@ -644,12 +687,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(800, 550);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FrmHome";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -672,6 +715,9 @@
             this.panelMod10.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelLista.ResumeLayout(false);
+            this.tPanelCheckList.ResumeLayout(false);
+            this.tPanelCheckList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -738,5 +784,7 @@
         private Label lblFecha;
         private Label label10;
         private Panel panelLista;
+        private TableLayoutPanel tPanelCheckList;
+        private Label lblCheckList;
     }
 }

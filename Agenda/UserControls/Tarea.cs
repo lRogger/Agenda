@@ -21,7 +21,7 @@ namespace Visual.UserControls
 
         private void Tarea_Load(object sender, EventArgs e)
         {
-            
+            this.Dock= DockStyle.Fill;
         }
 
         private void Tarea_Paint(object sender, PaintEventArgs e)

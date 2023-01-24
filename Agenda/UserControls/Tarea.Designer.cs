@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelMod1 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tPanelPrim = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTarea = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.panelMod1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tPanelPrim.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             // 
             this.panelMod1.BackColor = System.Drawing.Color.White;
             this.panelMod1.BorderRadius = 10;
-            this.panelMod1.Controls.Add(this.tableLayoutPanel1);
+            this.panelMod1.Controls.Add(this.tPanelPrim);
             this.panelMod1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod1.ForeColor = System.Drawing.Color.Black;
             this.panelMod1.GradientAngle = 90F;
@@ -53,20 +53,20 @@
             this.panelMod1.Size = new System.Drawing.Size(232, 50);
             this.panelMod1.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // tPanelPrim
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(232, 50);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.tPanelPrim.ColumnCount = 2;
+            this.tPanelPrim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tPanelPrim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tPanelPrim.Controls.Add(this.panel1, 1, 0);
+            this.tPanelPrim.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tPanelPrim.Location = new System.Drawing.Point(0, 0);
+            this.tPanelPrim.Name = "tPanelPrim";
+            this.tPanelPrim.RowCount = 1;
+            this.tPanelPrim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tPanelPrim.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tPanelPrim.Size = new System.Drawing.Size(232, 50);
+            this.tPanelPrim.TabIndex = 1;
             // 
             // panel1
             // 
@@ -89,7 +89,6 @@
             this.lblTarea.Size = new System.Drawing.Size(176, 25);
             this.lblTarea.TabIndex = 2;
             this.lblTarea.Text = "Titulo de la Tarea";
-            this.lblTarea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFecha
             // 
@@ -114,7 +113,7 @@
             this.Load += new System.EventHandler(this.Tarea_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Tarea_Paint);
             this.panelMod1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tPanelPrim.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -123,9 +122,9 @@
         #endregion
 
         private Individual.Visual.ComponentesMod.PanelMod panelMod1;
-        private TableLayoutPanel tableLayoutPanel1;
         private Panel panel1;
-        private Label lblTarea;
-        private Label lblFecha;
+        public Label lblFecha;
+        public Label lblTarea;
+        public TableLayoutPanel tPanelPrim;
     }
 }
