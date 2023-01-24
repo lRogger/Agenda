@@ -48,14 +48,14 @@
             this.panelMod10 = new Individual.Visual.ComponentesMod.PanelMod();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.panelLista = new Individual.Visual.ComponentesMod.PanelMod();
             this.calendario1 = new Visual.UserControls.Calendario();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnEliminar = new Individual.Visual.ComponentesMod.RJButton();
             this.rjButton1 = new Individual.Visual.ComponentesMod.RJButton();
             this.btnCrearTarea = new Individual.Visual.ComponentesMod.RJButton();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panelLista = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -207,9 +207,9 @@
             this.tableLayoutPanel1.Controls.Add(this.panelMod14, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod12, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod10, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelLista, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.calendario1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panelLista, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 93);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -382,22 +382,6 @@
             this.label12.TabIndex = 6;
             this.label12.Text = "00";
             // 
-            // panelLista
-            // 
-            this.panelLista.BackColor = System.Drawing.Color.Gainsboro;
-            this.panelLista.BorderRadius = 10;
-            this.panelLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLista.ForeColor = System.Drawing.Color.Black;
-            this.panelLista.GradientAngle = 90F;
-            this.panelLista.GradientBottomColor = System.Drawing.Color.Transparent;
-            this.panelLista.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelLista.Location = new System.Drawing.Point(504, 0);
-            this.panelLista.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.panelLista.Name = "panelLista";
-            this.tableLayoutPanel1.SetRowSpan(this.panelLista, 3);
-            this.panelLista.Size = new System.Drawing.Size(260, 450);
-            this.panelLista.TabIndex = 3;
-            // 
             // calendario1
             // 
             this.calendario1.BordeColor = System.Drawing.Color.Silver;
@@ -420,7 +404,7 @@
             this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Controls.Add(this.btnCrearTarea);
-            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.lblFecha);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 94);
@@ -485,18 +469,18 @@
             this.btnCrearTarea.TextColor = System.Drawing.Color.White;
             this.btnCrearTarea.UseVisualStyleBackColor = false;
             // 
-            // label17
+            // lblFecha
             // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(0, 25);
-            this.label17.Margin = new System.Windows.Forms.Padding(0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(207, 37);
-            this.label17.TabIndex = 1;
-            this.label17.Text = " 01 Enero 2023";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFecha.Location = new System.Drawing.Point(0, 25);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(0);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(207, 37);
+            this.lblFecha.TabIndex = 1;
+            this.lblFecha.Text = " 01 Enero 2023";
+            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
@@ -508,6 +492,17 @@
             this.label10.Size = new System.Drawing.Size(56, 19);
             this.label10.TabIndex = 0;
             this.label10.Text = "Agenda";
+            // 
+            // panelLista
+            // 
+            this.panelLista.BackColor = System.Drawing.Color.Transparent;
+            this.panelLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLista.Location = new System.Drawing.Point(504, 2);
+            this.panelLista.Margin = new System.Windows.Forms.Padding(0, 2, 0, 8);
+            this.panelLista.Name = "panelLista";
+            this.tableLayoutPanel1.SetRowSpan(this.panelLista, 3);
+            this.panelLista.Size = new System.Drawing.Size(260, 448);
+            this.panelLista.TabIndex = 6;
             // 
             // pictureBox5
             // 
@@ -735,13 +730,13 @@
         private Label label12;
         private FlowLayoutPanel flowLayoutPanel1;
         private CustomControls.RJControls.RJCircularPictureBox pbUser;
-        private Individual.Visual.ComponentesMod.PanelMod panelLista;
         private UserControls.Calendario calendario1;
         private Panel panel2;
         private Individual.Visual.ComponentesMod.RJButton btnEliminar;
         private Individual.Visual.ComponentesMod.RJButton rjButton1;
         private Individual.Visual.ComponentesMod.RJButton btnCrearTarea;
-        private Label label17;
+        private Label lblFecha;
         private Label label10;
+        private Panel panelLista;
     }
 }

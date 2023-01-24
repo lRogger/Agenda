@@ -28,5 +28,10 @@ namespace Visual.UserControls
             tableLayoutPanel3.BackColor= c;
             
         }
+
+        private void tarea1_Load(object sender, EventArgs e)
+        {
+            //tarea1.BackColor = this.BackColor;
+        }
     }
 }

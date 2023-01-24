@@ -18,5 +18,15 @@ namespace Visual.UserControls
             InitializeComponent();
             
         }
+
+        private void Tarea_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Tarea_Paint(object sender, PaintEventArgs e)
+        {
+            //this.BackColor = this.FindForm().BackColor;
+        }
     }
 }

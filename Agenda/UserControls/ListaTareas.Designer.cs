@@ -32,11 +32,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tarea2 = new Visual.UserControls.Tarea();
             this.tarea1 = new Visual.UserControls.Tarea();
-            this.tarea3 = new Visual.UserControls.Tarea();
-            this.tarea4 = new Visual.UserControls.Tarea();
-            this.tarea5 = new Visual.UserControls.Tarea();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblRgTareas = new System.Windows.Forms.Label();
@@ -96,11 +92,7 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.tarea2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tarea1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tarea3, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.tarea4, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tarea5, 0, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -116,55 +108,14 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(250, 383);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // tarea2
-            // 
-            this.tarea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tarea2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tarea2.Location = new System.Drawing.Point(10, 65);
-            this.tarea2.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tarea2.Name = "tarea2";
-            this.tarea2.Size = new System.Drawing.Size(230, 50);
-            this.tarea2.TabIndex = 1;
-            // 
             // tarea1
             // 
-            this.tarea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tarea1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tarea1.BackColor = System.Drawing.Color.Transparent;
             this.tarea1.Location = new System.Drawing.Point(10, 5);
             this.tarea1.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.tarea1.Name = "tarea1";
             this.tarea1.Size = new System.Drawing.Size(230, 50);
-            this.tarea1.TabIndex = 2;
-            // 
-            // tarea3
-            // 
-            this.tarea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tarea3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tarea3.Location = new System.Drawing.Point(10, 125);
-            this.tarea3.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tarea3.Name = "tarea3";
-            this.tarea3.Size = new System.Drawing.Size(230, 50);
-            this.tarea3.TabIndex = 3;
-            // 
-            // tarea4
-            // 
-            this.tarea4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tarea4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tarea4.Location = new System.Drawing.Point(10, 185);
-            this.tarea4.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tarea4.Name = "tarea4";
-            this.tarea4.Size = new System.Drawing.Size(230, 50);
-            this.tarea4.TabIndex = 4;
-            // 
-            // tarea5
-            // 
-            this.tarea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tarea5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tarea5.Location = new System.Drawing.Point(10, 245);
-            this.tarea5.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tarea5.Name = "tarea5";
-            this.tarea5.Size = new System.Drawing.Size(230, 50);
-            this.tarea5.TabIndex = 5;
+            this.tarea1.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
@@ -216,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panelMod1);
             this.Name = "ListaTareas";
             this.Size = new System.Drawing.Size(250, 450);
@@ -237,13 +188,9 @@
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel2;
-        private Tarea tarea2;
-        private Tarea tarea1;
-        private Tarea tarea3;
-        private Tarea tarea4;
-        private Tarea tarea5;
         public TableLayoutPanel tableLayoutPanel2;
         public Label lblFecha;
         public Label lblRgTareas;
+        private Tarea tarea1;
     }
 }

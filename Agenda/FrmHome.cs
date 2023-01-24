@@ -26,6 +26,7 @@ namespace Visual
             sesion = new Persona();
             this.FormBorderStyle = FormBorderStyle.Sizable;
             this.Resize += FrmHome_EndResize;
+            lblFecha.Text = DateTime.Now.ToString("M");
         }
 
         private void rjTextBox1__TextChanged(object sender, EventArgs e)

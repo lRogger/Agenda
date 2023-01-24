@@ -106,11 +106,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panelMod1);
             this.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.Name = "Tarea";
             this.Size = new System.Drawing.Size(232, 50);
+            this.Load += new System.EventHandler(this.Tarea_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Tarea_Paint);
             this.panelMod1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
