@@ -32,8 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnUser = new Individual.Visual.ComponentesMod.RJButton();
-            this.panelMod18 = new Individual.Visual.ComponentesMod.PanelMod();
-            this.pbUser = new System.Windows.Forms.PictureBox();
+            this.pbUser = new CustomControls.RJControls.RJCircularPictureBox();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +74,6 @@
             this.calendario1 = new Visual.UserControls.Calendario();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panelMod18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -114,7 +112,7 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.btnUser);
-            this.flowLayoutPanel1.Controls.Add(this.panelMod18);
+            this.flowLayoutPanel1.Controls.Add(this.pbUser);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(254, 2);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -147,30 +145,21 @@
             this.btnUser.TextColor = System.Drawing.Color.Black;
             this.btnUser.UseVisualStyleBackColor = false;
             // 
-            // panelMod18
-            // 
-            this.panelMod18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMod18.BackColor = System.Drawing.Color.Transparent;
-            this.panelMod18.BorderRadius = 40;
-            this.panelMod18.Controls.Add(this.pbUser);
-            this.panelMod18.ForeColor = System.Drawing.Color.Black;
-            this.panelMod18.GradientAngle = 90F;
-            this.panelMod18.GradientBottomColor = System.Drawing.Color.Transparent;
-            this.panelMod18.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod18.Location = new System.Drawing.Point(370, 3);
-            this.panelMod18.Name = "panelMod18";
-            this.panelMod18.Size = new System.Drawing.Size(40, 40);
-            this.panelMod18.TabIndex = 6;
-            // 
             // pbUser
             // 
-            this.pbUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbUser.Location = new System.Drawing.Point(0, 0);
+            this.pbUser.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pbUser.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.pbUser.BorderColor2 = System.Drawing.Color.HotPink;
+            this.pbUser.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pbUser.BorderSize = 0;
+            this.pbUser.GradientAngle = 50F;
+            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
+            this.pbUser.Location = new System.Drawing.Point(373, 0);
             this.pbUser.Margin = new System.Windows.Forms.Padding(0);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(40, 40);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbUser.TabIndex = 5;
+            this.pbUser.TabIndex = 7;
             this.pbUser.TabStop = false;
             // 
             // rjTextBox2
@@ -711,7 +700,6 @@
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.panelMod18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -778,8 +766,6 @@
         private Label label10;
         private Panel panel2;
         private UserControls.Calendario calendario1;
-        private Individual.Visual.ComponentesMod.PanelMod panelMod18;
-        private PictureBox pbUser;
         private Individual.Visual.ComponentesMod.RJButton btnUser;
         private CustomControls.RJControls.RJTextBox rjTextBox2;
         private Individual.Visual.ComponentesMod.PanelMod panelMod16;
@@ -803,5 +789,6 @@
         private Label label11;
         private Label label12;
         private FlowLayoutPanel flowLayoutPanel1;
+        private CustomControls.RJControls.RJCircularPictureBox pbUser;
     }
 }
