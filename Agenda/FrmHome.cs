@@ -69,6 +69,8 @@ namespace Visual
             int count = 1;
 
             checkList = new List<Tarea>();
+            tPanelCheckList.Controls.Clear();
+            tPanelCheckList.Controls.Add(lblCheckList);
             for (int i = 0; i < 10; i++)
             {
                 //CheckList
@@ -79,8 +81,9 @@ namespace Visual
                 t.lblTarea.Click += new EventHandler(Tarea_Click!);
                 tPanelCheckList.Controls.Add(t, 0, count);
                 t.Dock = DockStyle.Fill;
+                panelLista.Controls.Clear();
                 checkList.Add(t);
-                
+                panelLista.Controls.Add(tPanelCheckList);
                 count++;
             }
 
@@ -96,6 +99,7 @@ namespace Visual
                 }
                 
                 tPanelCheckList.Controls.Add(addTarea,0,count);
+                
                 addTarea.LinkClicked += addTarea_LinkClicked;
                 addTarea.TextAlign = ContentAlignment.MiddleCenter;
                 count++;
@@ -152,6 +156,23 @@ namespace Visual
         private void panelMod10_DoubleClick(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void panelMod12_DoubleClick(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void panelMod14_DoubleClick(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void panelMod10_Click_1(object sender, EventArgs e)
+        {
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod10.BackColor);
             lt.lblFecha.Text = DateTime.Now.ToString();
@@ -161,9 +182,8 @@ namespace Visual
             lt.Dock = DockStyle.Fill;
         }
 
-        private void panelMod12_DoubleClick(object sender, EventArgs e)
+        private void panelMod12_Click(object sender, EventArgs e)
         {
-            
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod12.BackColor);
             lt.lblFecha.Text = DateTime.Now.ToString();
@@ -173,9 +193,8 @@ namespace Visual
             lt.Dock = DockStyle.Fill;
         }
 
-        private void panelMod14_DoubleClick(object sender, EventArgs e)
+        private void panelMod14_Click(object sender, EventArgs e)
         {
-
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod14.BackColor);
             lt.lblFecha.Text = DateTime.Now.ToString();
@@ -183,6 +202,16 @@ namespace Visual
             panelLista.Controls.Clear();
             panelLista.Controls.Add(lt);
             lt.Dock = DockStyle.Fill;
+        }
+
+        private void panelMod1_Click(object sender, EventArgs e)
+        {
+            LoadCheckList();
+        }
+
+        private void tPanelCheckList_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
