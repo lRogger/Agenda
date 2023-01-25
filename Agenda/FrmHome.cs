@@ -82,6 +82,7 @@ namespace Visual
                 tPanelCheckList.Controls.Add(t, 0, count);
                 t.Dock = DockStyle.Fill;
                 panelLista.Controls.Clear();
+                
                 checkList.Add(t);
                 panelLista.Controls.Add(tPanelCheckList);
                 count++;
@@ -173,35 +174,17 @@ namespace Visual
 
         private void panelMod10_Click_1(object sender, EventArgs e)
         {
-            ListaTareas lt = new ListaTareas();
-            lt.ColorForm(panelMod10.BackColor);
-            lt.lblFecha.Text = DateTime.Now.ToString();
-            lt.lblRgTareas.Text = "Para hoy";
-            panelLista.Controls.Clear();
-            panelLista.Controls.Add(lt);
-            lt.Dock = DockStyle.Fill;
+            
         }
 
         private void panelMod12_Click(object sender, EventArgs e)
         {
-            ListaTareas lt = new ListaTareas();
-            lt.ColorForm(panelMod12.BackColor);
-            lt.lblFecha.Text = DateTime.Now.ToString();
-            lt.lblRgTareas.Text = "Para Mañana";
-            panelLista.Controls.Clear();
-            panelLista.Controls.Add(lt);
-            lt.Dock = DockStyle.Fill;
+            
         }
 
         private void panelMod14_Click(object sender, EventArgs e)
         {
-            ListaTareas lt = new ListaTareas();
-            lt.ColorForm(panelMod14.BackColor);
-            lt.lblFecha.Text = DateTime.Now.ToString();
-            lt.lblRgTareas.Text = "Esta Semana";
-            panelLista.Controls.Clear();
-            panelLista.Controls.Add(lt);
-            lt.Dock = DockStyle.Fill;
+            
         }
 
         private void panelMod1_Click(object sender, EventArgs e)
@@ -212,6 +195,44 @@ namespace Visual
         private void tPanelCheckList_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panelMod10_Click_2(object sender, EventArgs e)
+        {
+            ListaTareas lt = new ListaTareas();
+            lt.ColorForm(panelMod10.BackColor);
+            lt.lblFecha.Text = DateTime.Now.ToString();
+            lt.lblRgTareas.Text = "Para hoy";
+            panelLista.Controls.Clear();
+            panelLista.Controls.Add(lt);
+            lt.Dock = DockStyle.Fill;
+        }
+
+        private void panelMod12_Click_1(object sender, EventArgs e)
+        {
+            ListaTareas lt = new ListaTareas();
+            lt.ColorForm(panelMod12.BackColor);
+            lt.lblFecha.Text = DateTime.Now.ToString();
+            lt.lblRgTareas.Text = "Para Mañana";
+            panelLista.Controls.Clear();
+            panelLista.Controls.Add(lt);
+            lt.Dock = DockStyle.Fill;
+        }
+
+        private void panelMod14_Click_1(object sender, EventArgs e)
+        {
+            ListaTareas lt = new ListaTareas();
+            lt.ColorForm(panelMod14.BackColor);
+            lt.lblFecha.Text = DateTime.Now.ToString();
+            lt.lblRgTareas.Text = "Esta Semana";
+            panelLista.Controls.Clear();
+            panelLista.Controls.Add(lt);
+            lt.Dock = DockStyle.Fill;
+        }
+
+        private void panelMod1_Click_1(object sender, EventArgs e)
+        {
+            LoadCheckList();
         }
     }
 }

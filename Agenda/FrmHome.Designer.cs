@@ -36,17 +36,6 @@
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panelLista = new System.Windows.Forms.Panel();
@@ -66,9 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panelLista.SuspendLayout();
@@ -178,137 +164,11 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(18, 49);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Check List";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(13, 12);
-            this.label9.Margin = new System.Windows.Forms.Padding(0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 37);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "00";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(18, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Siguiente semana";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 12);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 37);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "00";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(18, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Para mañana";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 12);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 37);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "00";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Para hoy";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 12);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 37);
-            this.label2.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
@@ -422,11 +282,12 @@
             this.panelMod10.GradientAngle = 90F;
             this.panelMod10.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod10.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod10.Location = new System.Drawing.Point(99, 28);
-            this.panelMod10.Margin = new System.Windows.Forms.Padding(8, 0, 5, 0);
+            this.panelMod10.Location = new System.Drawing.Point(77, 63);
+            this.panelMod10.Margin = new System.Windows.Forms.Padding(0);
             this.panelMod10.Name = "panelMod10";
-            this.panelMod10.Size = new System.Drawing.Size(38, 69);
+            this.panelMod10.Size = new System.Drawing.Size(70, 92);
             this.panelMod10.TabIndex = 3;
+            this.panelMod10.Click += new System.EventHandler(this.panelMod10_Click_2);
             // 
             // panelMod1
             // 
@@ -440,11 +301,12 @@
             this.panelMod1.GradientAngle = 90F;
             this.panelMod1.GradientBottomColor = System.Drawing.Color.White;
             this.panelMod1.GradientTopColor = System.Drawing.Color.White;
-            this.panelMod1.Location = new System.Drawing.Point(20, 15);
-            this.panelMod1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.panelMod1.Location = new System.Drawing.Point(7, 63);
+            this.panelMod1.Margin = new System.Windows.Forms.Padding(0);
             this.panelMod1.Name = "panelMod1";
-            this.panelMod1.Size = new System.Drawing.Size(41, 83);
+            this.panelMod1.Size = new System.Drawing.Size(70, 92);
             this.panelMod1.TabIndex = 5;
+            this.panelMod1.Click += new System.EventHandler(this.panelMod1_Click_1);
             // 
             // panelMod12
             // 
@@ -458,11 +320,12 @@
             this.panelMod12.GradientAngle = 90F;
             this.panelMod12.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
             this.panelMod12.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.Location = new System.Drawing.Point(204, 31);
-            this.panelMod12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.panelMod12.Location = new System.Drawing.Point(146, 63);
+            this.panelMod12.Margin = new System.Windows.Forms.Padding(0);
             this.panelMod12.Name = "panelMod12";
-            this.panelMod12.Size = new System.Drawing.Size(39, 83);
+            this.panelMod12.Size = new System.Drawing.Size(70, 92);
             this.panelMod12.TabIndex = 4;
+            this.panelMod12.Click += new System.EventHandler(this.panelMod12_Click_1);
             // 
             // panelMod14
             // 
@@ -476,11 +339,12 @@
             this.panelMod14.GradientAngle = 90F;
             this.panelMod14.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod14.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod14.Location = new System.Drawing.Point(264, 43);
-            this.panelMod14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.panelMod14.Location = new System.Drawing.Point(215, 63);
+            this.panelMod14.Margin = new System.Windows.Forms.Padding(0);
             this.panelMod14.Name = "panelMod14";
-            this.panelMod14.Size = new System.Drawing.Size(48, 52);
+            this.panelMod14.Size = new System.Drawing.Size(70, 92);
             this.panelMod14.TabIndex = 5;
+            this.panelMod14.Click += new System.EventHandler(this.panelMod14_Click_1);
             // 
             // calendario1
             // 
@@ -565,9 +429,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panelLista.ResumeLayout(false);
@@ -601,17 +462,6 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox5;
-        private Label label8;
-        private Label label9;
-        private PictureBox pictureBox4;
-        private Label label6;
-        private Label label7;
-        private PictureBox pictureBox3;
-        private Label label4;
-        private Label label5;
-        private PictureBox pictureBox2;
-        private Label label3;
-        private Label label2;
         private Individual.Visual.ComponentesMod.RJButton btnUser;
         private CustomControls.RJControls.RJTextBox rjTextBox2;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -626,9 +476,9 @@
         private Individual.Visual.ComponentesMod.PanelMod panelMod12;
         private Individual.Visual.ComponentesMod.PanelMod panelMod14;
         private Individual.Visual.ComponentesMod.PanelMod panelMod10;
-        private UserControls.Calendario calendario1;
         private Panel panel2;
         private Individual.Visual.ComponentesMod.RJButton btnCrearTarea;
         private Label lblFecha;
+        private UserControls.Calendario calendario1;
     }
 }
