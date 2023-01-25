@@ -154,50 +154,14 @@ namespace Visual
             this.Refresh();
         }
 
-        private void panelMod10_DoubleClick(object sender, EventArgs e)
-        {
 
-            
-        }
 
-        private void panelMod12_DoubleClick(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void panelMod14_DoubleClick(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void panelMod10_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panelMod12_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panelMod14_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panelMod1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
             LoadCheckList();
         }
 
-        private void tPanelCheckList_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelMod10_Click_2(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod10.BackColor);
@@ -208,7 +172,7 @@ namespace Visual
             lt.Dock = DockStyle.Fill;
         }
 
-        private void panelMod12_Click_1(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod12.BackColor);
@@ -219,7 +183,7 @@ namespace Visual
             lt.Dock = DockStyle.Fill;
         }
 
-        private void panelMod14_Click_1(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
             ListaTareas lt = new ListaTareas();
             lt.ColorForm(panelMod14.BackColor);
@@ -228,11 +192,6 @@ namespace Visual
             panelLista.Controls.Clear();
             panelLista.Controls.Add(lt);
             lt.Dock = DockStyle.Fill;
-        }
-
-        private void panelMod1_Click_1(object sender, EventArgs e)
-        {
-            LoadCheckList();
         }
     }
 }
