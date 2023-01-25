@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Agenda/FrmHome.cs
+/Agenda/FrmHome.Designer.cs
+/Agenda/FrmHome.resx
