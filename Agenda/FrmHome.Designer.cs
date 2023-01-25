@@ -46,6 +46,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panelMod10 = new Individual.Visual.ComponentesMod.PanelMod();
+            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.calendario1 = new Visual.UserControls.Calendario();
@@ -80,6 +81,7 @@
             this.panelMod13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelMod10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelLista.SuspendLayout();
             this.tPanelCheckList.SuspendLayout();
@@ -97,7 +99,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(764, 45);
+            this.panel1.Size = new System.Drawing.Size(1330, 45);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -105,12 +107,12 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.btnUser);
             this.flowLayoutPanel1.Controls.Add(this.pbUser);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(314, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(880, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(450, 45);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(440, 45);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // btnUser
@@ -126,7 +128,7 @@
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.ForeColor = System.Drawing.Color.Black;
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUser.Location = new System.Drawing.Point(337, 7);
+            this.btnUser.Location = new System.Drawing.Point(327, 7);
             this.btnUser.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnUser.MinimumSize = new System.Drawing.Size(110, 0);
             this.btnUser.Name = "btnUser";
@@ -147,7 +149,7 @@
             this.pbUser.BorderSize = 0;
             this.pbUser.GradientAngle = 50F;
             this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
-            this.pbUser.Location = new System.Drawing.Point(297, 2);
+            this.pbUser.Location = new System.Drawing.Point(287, 2);
             this.pbUser.Margin = new System.Windows.Forms.Padding(0);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(40, 40);
@@ -157,12 +159,12 @@
             // 
             // rjTextBox2
             // 
-            this.rjTextBox2.BackColor = System.Drawing.Color.Silver;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.Silver;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.Silver;
+            this.rjTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(232)))));
+            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(232)))));
+            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBox2.BorderRadius = 10;
             this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rjTextBox2.Font = new System.Drawing.Font("Mazzard H SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rjTextBox2.ForeColor = System.Drawing.Color.White;
             this.rjTextBox2.Location = new System.Drawing.Point(0, 6);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -172,7 +174,7 @@
             this.rjTextBox2.PasswordChar = false;
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.White;
             this.rjTextBox2.PlaceholderText = "🔎 Buscar";
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBox2.Size = new System.Drawing.Size(447, 34);
             this.rjTextBox2.TabIndex = 0;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
@@ -204,10 +206,10 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.Controls.Add(this.panelMod14, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod12, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMod10, 0, 0);
@@ -219,10 +221,10 @@
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(764, 458);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92286F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.96272F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.11442F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1330, 626);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panelMod14
@@ -237,10 +239,10 @@
             this.panelMod14.GradientAngle = 90F;
             this.panelMod14.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod14.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod14.Location = new System.Drawing.Point(341, 0);
+            this.panelMod14.Location = new System.Drawing.Point(643, 0);
             this.panelMod14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod14.Name = "panelMod14";
-            this.panelMod14.Size = new System.Drawing.Size(158, 91);
+            this.panelMod14.Size = new System.Drawing.Size(309, 112);
             this.panelMod14.TabIndex = 2;
             this.panelMod14.DoubleClick += new System.EventHandler(this.panelMod14_DoubleClick);
             // 
@@ -251,7 +253,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(9, 58);
+            this.label15.Location = new System.Drawing.Point(9, 79);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(100, 13);
@@ -282,15 +284,14 @@
             this.panelMod12.Controls.Add(this.label13);
             this.panelMod12.Controls.Add(this.label14);
             this.panelMod12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelMod12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMod12.ForeColor = System.Drawing.Color.Black;
             this.panelMod12.GradientAngle = 90F;
             this.panelMod12.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
             this.panelMod12.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(240)))));
-            this.panelMod12.Location = new System.Drawing.Point(173, 0);
+            this.panelMod12.Location = new System.Drawing.Point(324, 0);
             this.panelMod12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelMod12.Name = "panelMod12";
-            this.panelMod12.Size = new System.Drawing.Size(158, 91);
+            this.panelMod12.Size = new System.Drawing.Size(309, 112);
             this.panelMod12.TabIndex = 1;
             this.panelMod12.DoubleClick += new System.EventHandler(this.panelMod12_DoubleClick);
             // 
@@ -304,7 +305,7 @@
             this.panelMod13.GradientAngle = 90F;
             this.panelMod13.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
             this.panelMod13.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
-            this.panelMod13.Location = new System.Drawing.Point(194, 25);
+            this.panelMod13.Location = new System.Drawing.Point(345, 36);
             this.panelMod13.Name = "panelMod13";
             this.panelMod13.Size = new System.Drawing.Size(40, 40);
             this.panelMod13.TabIndex = 5;
@@ -325,7 +326,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(9, 58);
+            this.label13.Location = new System.Drawing.Point(9, 79);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(76, 13);
@@ -339,7 +340,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(5, 18);
+            this.label14.Location = new System.Drawing.Point(5, 39);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(42, 32);
@@ -350,6 +351,7 @@
             // 
             this.panelMod10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.panelMod10.BorderRadius = 10;
+            this.panelMod10.Controls.Add(this.rjCircularPictureBox1);
             this.panelMod10.Controls.Add(this.label11);
             this.panelMod10.Controls.Add(this.label12);
             this.panelMod10.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -358,25 +360,43 @@
             this.panelMod10.GradientAngle = 90F;
             this.panelMod10.GradientBottomColor = System.Drawing.Color.Transparent;
             this.panelMod10.GradientTopColor = System.Drawing.Color.Transparent;
-            this.panelMod10.Location = new System.Drawing.Point(0, 0);
-            this.panelMod10.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.panelMod10.Location = new System.Drawing.Point(8, 0);
+            this.panelMod10.Margin = new System.Windows.Forms.Padding(8, 0, 5, 0);
             this.panelMod10.Name = "panelMod10";
-            this.panelMod10.Size = new System.Drawing.Size(163, 91);
+            this.panelMod10.Size = new System.Drawing.Size(306, 112);
             this.panelMod10.TabIndex = 0;
             this.panelMod10.Click += new System.EventHandler(this.panelMod10_Click);
             this.panelMod10.DoubleClick += new System.EventHandler(this.panelMod10_DoubleClick);
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rjCircularPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(195)))), ((int)(((byte)(110)))));
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 0;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(198, 17);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(75, 75);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 8;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Mazzard H Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(14, 59);
+            this.label11.Location = new System.Drawing.Point(29, 71);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 13);
+            this.label11.Size = new System.Drawing.Size(95, 22);
             this.label11.TabIndex = 7;
             this.label11.Text = "Para Hoy";
             // 
@@ -385,12 +405,12 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Font = new System.Drawing.Font("Mazzard H", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(10, 19);
+            this.label12.Location = new System.Drawing.Point(23, 17);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 32);
+            this.label12.Size = new System.Drawing.Size(85, 57);
             this.label12.TabIndex = 6;
             this.label12.Text = "00";
             // 
@@ -403,10 +423,10 @@
             this.calendario1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calendario1.FuenteDias = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.calendario1.FuenteDiasColor = System.Drawing.Color.Empty;
-            this.calendario1.Location = new System.Drawing.Point(3, 162);
+            this.calendario1.Location = new System.Drawing.Point(3, 221);
             this.calendario1.MinimumSize = new System.Drawing.Size(150, 100);
             this.calendario1.Name = "calendario1";
-            this.calendario1.Size = new System.Drawing.Size(498, 293);
+            this.calendario1.Size = new System.Drawing.Size(951, 402);
             this.calendario1.TabIndex = 4;
             this.calendario1.TipoDias = Visual.UserControls.Calendario.LabelTextOptions.Completo;
             // 
@@ -419,9 +439,9 @@
             this.panel2.Controls.Add(this.lblFecha);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 94);
+            this.panel2.Location = new System.Drawing.Point(3, 115);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(498, 62);
+            this.panel2.Size = new System.Drawing.Size(951, 100);
             this.panel2.TabIndex = 5;
             // 
             // btnEliminar
@@ -435,7 +455,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(403, 34);
+            this.btnEliminar.Location = new System.Drawing.Point(856, 72);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 25);
             this.btnEliminar.TabIndex = 4;
@@ -454,7 +474,7 @@
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(308, 34);
+            this.rjButton1.Location = new System.Drawing.Point(761, 72);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(92, 25);
             this.rjButton1.TabIndex = 3;
@@ -473,7 +493,7 @@
             this.btnCrearTarea.FlatAppearance.BorderSize = 0;
             this.btnCrearTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearTarea.ForeColor = System.Drawing.Color.White;
-            this.btnCrearTarea.Location = new System.Drawing.Point(212, 34);
+            this.btnCrearTarea.Location = new System.Drawing.Point(665, 72);
             this.btnCrearTarea.Name = "btnCrearTarea";
             this.btnCrearTarea.Size = new System.Drawing.Size(92, 25);
             this.btnCrearTarea.TabIndex = 2;
@@ -486,7 +506,7 @@
             this.lblFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFecha.Location = new System.Drawing.Point(0, 25);
+            this.lblFecha.Location = new System.Drawing.Point(-7, 59);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(207, 37);
@@ -499,7 +519,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(4, 4);
+            this.label10.Location = new System.Drawing.Point(5, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 19);
             this.label10.TabIndex = 0;
@@ -510,11 +530,12 @@
             this.panelLista.BackColor = System.Drawing.Color.Transparent;
             this.panelLista.Controls.Add(this.tPanelCheckList);
             this.panelLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLista.Location = new System.Drawing.Point(504, 2);
+            this.panelLista.Location = new System.Drawing.Point(957, 2);
             this.panelLista.Margin = new System.Windows.Forms.Padding(0, 2, 0, 8);
             this.panelLista.Name = "panelLista";
+            this.panelLista.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.tableLayoutPanel1.SetRowSpan(this.panelLista, 3);
-            this.panelLista.Size = new System.Drawing.Size(260, 448);
+            this.panelLista.Size = new System.Drawing.Size(373, 616);
             this.panelLista.TabIndex = 6;
             // 
             // tPanelCheckList
@@ -524,7 +545,7 @@
             this.tPanelCheckList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tPanelCheckList.Controls.Add(this.lblCheckList, 0, 0);
             this.tPanelCheckList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tPanelCheckList.Location = new System.Drawing.Point(0, 0);
+            this.tPanelCheckList.Location = new System.Drawing.Point(10, 0);
             this.tPanelCheckList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
             this.tPanelCheckList.Name = "tPanelCheckList";
             this.tPanelCheckList.RowCount = 11;
@@ -539,7 +560,7 @@
             this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
             this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
             this.tPanelCheckList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
-            this.tPanelCheckList.Size = new System.Drawing.Size(260, 448);
+            this.tPanelCheckList.Size = new System.Drawing.Size(353, 616);
             this.tPanelCheckList.TabIndex = 0;
             // 
             // lblCheckList
@@ -550,10 +571,10 @@
             this.lblCheckList.Location = new System.Drawing.Point(10, 0);
             this.lblCheckList.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.lblCheckList.Name = "lblCheckList";
-            this.lblCheckList.Size = new System.Drawing.Size(247, 44);
+            this.lblCheckList.Size = new System.Drawing.Size(340, 61);
             this.lblCheckList.TabIndex = 0;
             this.lblCheckList.Text = "CheckList";
-            this.lblCheckList.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblCheckList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox5
             // 
@@ -695,8 +716,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -721,6 +742,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panelMod10.ResumeLayout(false);
             this.panelMod10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelLista.ResumeLayout(false);
@@ -794,5 +816,6 @@
         private Panel panelLista;
         private TableLayoutPanel tPanelCheckList;
         private Label lblCheckList;
+        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }

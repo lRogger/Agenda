@@ -47,17 +47,17 @@ namespace Visual
 
         private async void FrmHome_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            DataBase db = new DataBase();
+            //DataSet ds = new DataSet();
+            //DataBase db = new DataBase();
 
 
-            ds = await db.consultar("Select * FROM User WHERE CEDULA = 0930555420");
+           // ds = await db.consultar("Select * FROM User WHERE CEDULA = 0930555420");
 
-            Persona p = new Persona();
-            p.Imagen = ds.Tables[0].Rows[0]["Imagen"];
+            //Persona p = new Persona();
+           // p.Imagen = ds.Tables[0].Rows[0]["Imagen"];
 
-            dynamic json = JsonConvert.DeserializeObject(p.Imagen);
-            pbUser.ImageLocation = json.data.link;
+            //dynamic json = JsonConvert.DeserializeObject(p.Imagen);
+           // pbUser.ImageLocation = json.data.link;
 
             LoadCheckList();
             
@@ -74,7 +74,7 @@ namespace Visual
                 Tarea t = new Tarea();
                 t.lblFecha.Visible = false;
                 t.lblTarea.Text = "Prueba Tarea " + i;
-                t.tPanelPrim.Click += new EventHandler(Tarea_Click!);
+                //t.tPanelPrim.Click += new EventHandler(Tarea_Click!);
                 t.lblTarea.Click += new EventHandler(Tarea_Click!);
                 tPanelCheckList.Controls.Add(t, 0, count);
                 t.Dock = DockStyle.Fill;
@@ -112,7 +112,7 @@ namespace Visual
             }else if(sender is Label)
             {
                 Label tLabel = (Label)sender;
-                t = (Tarea)tLabel.Parent.Parent.Parent.Parent;
+                t = (Tarea)tLabel.Parent.Parent.Parent;
             }
             
             foreach (Tarea tareas in checkList)
@@ -120,11 +120,11 @@ namespace Visual
                 
                 if (tareas.lblTarea.Text == t.lblTarea.Text)
                 {
-                    tareas.tPanelPrim.BackColor = Color.Gray;
+                    tareas.panelMod1.BackColor = Color.White;
                 }
                 else
                 {
-                    tareas.tPanelPrim.BackColor = Color.White;
+                    tareas.panelMod1.BackColor = Color.FromArgb(242,242,242) ;
 
 
                 }
