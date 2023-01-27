@@ -61,7 +61,12 @@ namespace Visual
            // pbUser.ImageLocation = json.data.link;
 
             LoadCheckList();
-            
+            var moodle = new Moodle();
+            moodle.IniciarSesion("0930555420", "Rogger1998.");
+            //var eventos = moodle.GetUserEvents();
+            //string tareas = string.Join(Environment.NewLine, eventos);
+            //MessageBox.Show(tareas, "Tareas pendientes", MessageBoxButtons.OK);
+            MessageBox.Show(moodle.Token);
         }
 
         private void LoadCheckList()
